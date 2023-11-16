@@ -45,7 +45,7 @@ import "prismjs/components/prism-javascript";
 import "prismjs/themes/prism-okaidia.css";
 import { PrismEditor } from "vue-prism-editor";
 import "vue-prism-editor/dist/prismeditor.min.css";
-import { AiScript, parse, utils } from "@syuilo/aiscript";
+import { Interpreter, Parser, utils } from "@syuilo/aiscript";
 import MkContainer from "@/components/MkContainer.vue";
 import MkButton from "@/components/MkButton.vue";
 import { createAiScriptEnv } from "@/scripts/aiscript/api";
@@ -56,6 +56,8 @@ import { definePageMetadata } from "@/scripts/page-metadata";
 
 const code = ref("");
 const logs = ref<any[]>([]);
+
+const parser = new Parser();
 
 const saved = localStorage.getItem("scratchpad");
 if (saved) {
@@ -68,7 +70,7 @@ watch(code, () => {
 
 async function run() {
 	logs.value = [];
-	const aiscript = new AiScript(
+	const aiscript = new Interpreter(
 		createAiScriptEnv({
 			storageKey: "scratchpad",
 			token: $i?.token,
@@ -111,11 +113,11 @@ async function run() {
 
 	let ast;
 	try {
-		ast = parse(code.value);
+		ast = parser.parse(code.value);
 	} catch (error) {
 		os.alert({
 			type: "error",
-			text: "Syntax error :(",
+			text: `Syntax error : ${error}`,
 		});
 		return;
 	}

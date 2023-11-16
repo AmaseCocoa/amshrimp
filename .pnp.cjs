@@ -3726,15 +3726,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@syuilo/aiscript", [\
-      ["npm:0.11.1", {\
-        "packageLocation": "./.yarn/cache/@syuilo-aiscript-npm-0.11.1-451b9d1a3f-4df4bb5a25.zip/node_modules/@syuilo/aiscript/",\
+      ["npm:0.16.0", {\
+        "packageLocation": "./.yarn/cache/@syuilo-aiscript-npm-0.16.0-078d966ef6-5c77fc596d.zip/node_modules/@syuilo/aiscript/",\
         "packageDependencies": [\
-          ["@syuilo/aiscript", "npm:0.11.1"],\
-          ["autobind-decorator", "npm:2.4.0"],\
-          ["chalk", "npm:4.0.0"],\
+          ["@syuilo/aiscript", "npm:0.16.0"],\
           ["seedrandom", "npm:3.0.5"],\
           ["stringz", "npm:2.1.0"],\
-          ["uuid", "npm:7.0.3"]\
+          ["uuid", "npm:9.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -7154,7 +7152,6 @@ const RAW_RUNTIME_STATE =
           ["@swc/cli", "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:0.1.62"],\
           ["@swc/core", "virtual:21a30884d94fbf67bcf4a1714713cc91d32809a34424c4ce678841dfdc63b58647c5e18570d56e36b3c762ee72f81c251599477127a715978fa6e1d8b9e5d952#npm:1.3.71"],\
           ["@swc/core-android-arm64", "npm:1.3.11"],\
-          ["@syuilo/aiscript", "npm:0.11.1"],\
           ["@types/adm-zip", "npm:0.5.0"],\
           ["@types/async-lock", "npm:1.4.0"],\
           ["@types/bcryptjs", "npm:2.4.2"],\
@@ -8122,15 +8119,6 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:4.0.0", {\
-        "packageLocation": "./.yarn/cache/chalk-npm-4.0.0-50e5418ea0-f8ae363f43.zip/node_modules/chalk/",\
-        "packageDependencies": [\
-          ["chalk", "npm:4.0.0"],\
-          ["ansi-styles", "npm:4.3.0"],\
-          ["supports-color", "npm:7.2.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:4.1.2", {\
         "packageLocation": "./.yarn/cache/chalk-npm-4.1.2-ba8b67ab80-cb3f3e5949.zip/node_modules/chalk/",\
         "packageDependencies": [\
@@ -8524,7 +8512,7 @@ const RAW_RUNTIME_STATE =
           ["@rollup/plugin-alias", "virtual:658502eb4296e93abedc18b6aa9b26978f434f08d98e21ebb0e725354b8bb54b62db9c4a1893e460c694ff7500ff5cbafa4457b0dfd26b5838868666c861e990#npm:5.1.0"],\
           ["@rollup/plugin-json", "virtual:658502eb4296e93abedc18b6aa9b26978f434f08d98e21ebb0e725354b8bb54b62db9c4a1893e460c694ff7500ff5cbafa4457b0dfd26b5838868666c861e990#npm:6.0.1"],\
           ["@rollup/pluginutils", "virtual:658502eb4296e93abedc18b6aa9b26978f434f08d98e21ebb0e725354b8bb54b62db9c4a1893e460c694ff7500ff5cbafa4457b0dfd26b5838868666c861e990#npm:5.1.0"],\
-          ["@syuilo/aiscript", "npm:0.11.1"],\
+          ["@syuilo/aiscript", "npm:0.16.0"],\
           ["@types/escape-regexp", "npm:0.0.1"],\
           ["@types/glob", "npm:8.1.0"],\
           ["@types/gulp", "npm:4.0.13"],\
@@ -24627,13 +24615,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["uuid", [\
-      ["npm:7.0.3", {\
-        "packageLocation": "./.yarn/cache/uuid-npm-7.0.3-2b088bd924-b2a4d30ecd.zip/node_modules/uuid/",\
-        "packageDependencies": [\
-          ["uuid", "npm:7.0.3"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:8.0.0", {\
         "packageLocation": "./.yarn/cache/uuid-npm-8.0.0-591e3a2e23-5086c43bbe.zip/node_modules/uuid/",\
         "packageDependencies": [\
@@ -24652,6 +24633,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/uuid-npm-9.0.0-46c41e3e43-23857699a6.zip/node_modules/uuid/",\
         "packageDependencies": [\
           ["uuid", "npm:9.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:9.0.1", {\
+        "packageLocation": "./.yarn/cache/uuid-npm-9.0.1-39a8442bc6-9d0b6adb72.zip/node_modules/uuid/",\
+        "packageDependencies": [\
+          ["uuid", "npm:9.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
