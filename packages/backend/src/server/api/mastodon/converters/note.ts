@@ -188,6 +188,7 @@ export class NoteConverter {
             reactions: populated.then(populated => Promise.resolve(reaction).then(reaction => this.encodeReactions(note.reactions, reaction?.reaction, populated))),
             bookmarked: isBookmarked,
             quote: reblog.then(reblog => isQuote(note) ? reblog : null),
+			quote_id: isQuote(note) ? note.renoteId : null,
             edited_at: note.updatedAt?.toISOString() ?? null,
             filtered: filtered,
         });
