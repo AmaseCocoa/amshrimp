@@ -1,6 +1,17 @@
 /**
  * ユーザーが設定する必要のある情報
  */
+
+export type TypeORMLoggingOptions =
+	| "error"
+	| "slow"
+	| "query"
+	| "schema"
+	| "info"
+	| "log";
+
+export type TypeORMLoggingConfig = TypeORMLoggingOptions | TypeORMLoggingOptions[] | "all";
+
 export type Source = {
 	repository_url?: string;
 	feedback_url?: string;
@@ -9,6 +20,7 @@ export type Source = {
 	port: number;
 	disableHsts?: boolean;
 	db: {
+		logging?: TypeORMLoggingConfig;
 		host: string;
 		port: number;
 		db: string;

@@ -57,6 +57,18 @@ db:
   #   host: localhost
   #   rejectUnauthorized: false
 
+  # You can enable different different logging levels by setting the value of logging to any of the values listed below
+  #  * 'error' - logs all failed queries and errors
+  #  * 'slow' - logs slow queries
+  #  * 'query' - logs all queries
+  #  * 'schema' - logs the schema build process
+  #  * 'info' - logs internal orm informative messages
+  #  * 'log' - logs internal orm log messages
+  # You can set multiple log level by specifying them as an array i.e ['log', 'info']
+  # You can set disable all log levels by specifying an empty array: []
+  # You can set enable all log levels by specifying the special value: 'all'
+  logging: ['error', 'slow']
+
 #   ┌─────────────────────┐
 #───┘ Redis configuration └─────────────────────────────────────
 

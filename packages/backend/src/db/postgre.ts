@@ -76,8 +76,22 @@ import { OAuthApp } from "@/models/entities/oauth-app.js";
 import { OAuthToken } from "@/models/entities/oauth-token.js";
 import { HtmlNoteCacheEntry } from "@/models/entities/html-note-cache-entry.js";
 import { HtmlUserCacheEntry } from "@/models/entities/html-user-cache-entry.js";
+import { TypeORMLoggingOptions } from "@/config/types.js";
 
 const sqlLogger = dbLogger.createSubLogger("sql", "gray", false);
+const isLogEnabled = (level: TypeORMLoggingOptions): boolean => {
+	const logLevel = config.db.logging;
+	return Array.isArray(logLevel)
+		? logLevel.includes(level)
+		: logLevel === level || logLevel?.trim()?.toLowerCase() === "all";
+};
+const isLoggingEnabled = () => {
+	const logLevel = config.db.logging;
+	return Array.isArray(logLevel)
+		? logLevel.length > 0
+		: logLevel != null;
+}
+
 class MyCustomLogger implements Logger {
 	private highlight(sql: string) {
 		return highlight.highlight(sql, {
@@ -87,27 +101,28 @@ class MyCustomLogger implements Logger {
 	}
 
 	public logQuery(query: string, parameters?: any[]) {
-		sqlLogger.info(this.highlight(query).substring(0, 100));
+		if (isLogEnabled("query"))
+			sqlLogger.info(this.highlight(query).substring(0, 100));
 	}
 
 	public logQueryError(error: string, query: string, parameters?: any[]) {
-		sqlLogger.error(this.highlight(query));
+		if (isLogEnabled("error")) sqlLogger.error(this.highlight(query));
 	}
 
 	public logQuerySlow(time: number, query: string, parameters?: any[]) {
-		sqlLogger.warn(this.highlight(query));
+		if (isLogEnabled("slow")) sqlLogger.warn(this.highlight(query));
 	}
 
 	public logSchemaBuild(message: string) {
-		sqlLogger.info(message);
+		if (isLogEnabled("schema")) sqlLogger.info(message);
 	}
 
 	public log(message: string) {
-		sqlLogger.info(message);
+		if (isLogEnabled("log")) sqlLogger.info(message);
 	}
 
 	public logMigration(message: string) {
-		sqlLogger.info(message);
+		if (isLogEnabled("info")) sqlLogger.info(message);
 	}
 }
 
@@ -182,7 +197,7 @@ export const entities = [
 	...charts,
 ];
 
-const log = process.env.LOG_SQL === "true";
+const log = isLoggingEnabled() || process.env.LOG_SQL === "true";
 
 export const db = new DataSource({
 	type: "postgres",
@@ -213,7 +228,7 @@ export const db = new DataSource({
 		  }
 		: false,
 	logging: log,
-	logger: log ? new MyCustomLogger() : undefined,
+	logger: new MyCustomLogger(),
 	maxQueryExecutionTime: 300,
 	entities: entities,
 	migrations: ["../../migration/*.js"],
