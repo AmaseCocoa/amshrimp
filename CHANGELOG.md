@@ -23,7 +23,6 @@ This is a security release. Upgrading is therefore strongly recommended.
 - Various translation updates
 
 ### Attribution
-### Attribution
 This release was made possible by project contributors: CookiLover311, Crimekillz, Jegler, Laura Hausmann, Lilian, Norm, Salif Mehmed, jeder, konkonkon, naskya & 老周部落
 
 Furthermore, I want to give special thanks to Oneric for the extraordinarily detailed security disclosure.
