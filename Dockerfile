@@ -10,25 +10,25 @@ RUN apk add --no-cache --no-progress git alpine-sdk vips-dev python3 nodejs-curr
 COPY . ./
 
 # Prepare yarn cache
-RUN --mount=type=cache,target=/iceshrimp/.yarncache cp -Tr .yarncache .yarn
+RUN --mount=type=cache,target=/iceshrimp/.yarncache cp -r .yarncache/. .yarn
 
 # Configure corepack and install dev mode dependencies for compilation
 RUN corepack enable && corepack prepare --activate && yarn --immutable
 
 # Save yarn cache
-RUN --mount=type=cache,target=/iceshrimp/.yarncache rm -rf .yarncache/* && cp -Tr .yarn .yarncache
+RUN --mount=type=cache,target=/iceshrimp/.yarncache rm -rf .yarncache/* && cp -r .yarn/. .yarncache
 
 # Build the thing
 RUN env NODE_ENV=production yarn build
 
 # Prepare focused yarn cache
-RUN --mount=type=cache,target=/iceshrimp/.yarncache_focused cp -Tr .yarncache_focused .yarn
+RUN --mount=type=cache,target=/iceshrimp/.yarncache_focused cp -r .yarncache_focused/. .yarn
 
 # Remove dev deps
 RUN yarn focus-production
 
 # Save focused yarn cache
-RUN --mount=type=cache,target=/iceshrimp/.yarncache_focused rm -rf .yarncache/* && cp -Tr .yarn .yarncache_focused
+RUN --mount=type=cache,target=/iceshrimp/.yarncache_focused rm -rf .yarncache/* && cp -r .yarn/. .yarncache_focused
 
 ## Runtime container
 FROM alpine:3.18
