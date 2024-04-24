@@ -174,7 +174,7 @@ export class SearchHelpers {
             generateBlockedUserQuery(query, user);
         }
 
-        query.setParameter("meId", user);
+        query.setParameter("meId", user.id);
 
         return query.skip(offset ?? 0).take(limit).getMany().then(p => minId ? p.reverse() : p);
     }
