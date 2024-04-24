@@ -223,7 +223,7 @@ reservedUsernames: {{ .Values.iceshrimp.reservedUsernames | toJson }}
 #disableHsts: true
 
 # Number of worker processes
-#clusterLimit: 1
+clusterLimit: {{ .Values.iceshrimp.clusterLimit | default 1 }}
 
 # Job concurrency per worker
 # deliverJobConcurrency: 128

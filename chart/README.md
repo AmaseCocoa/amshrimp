@@ -22,6 +22,7 @@ A fun, new, open way to experience social media https://iceshrimp.dev
 | autoscaling.minReplicas | int | `1` |  |
 | autoscaling.targetCPUUtilizationPercentage | int | `80` |  |
 | iceshrimp.allowedPrivateNetworks | list | `[]` | If you want to allow iceshrimp to connect to private ips, enter the cidrs here. |
+| iceshrimp.clusterLimit | integer | `1` | Number of worker processes per replica |
 | iceshrimp.deepl.authKey | string | `""` |  |
 | iceshrimp.deepl.isPro | bool | `false` |  |
 | iceshrimp.deepl.managed | bool | `false` |  |
