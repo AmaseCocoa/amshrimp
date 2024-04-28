@@ -1,3 +1,27 @@
+## v2023.12.7
+This is a security release. Upgrading is therefore strongly recommended.
+
+### Backend
+- Incoming LD-signed activities are now compacted against a well-known context to defend against spoofing attacks
+- The automatically followed account property no longer gets set to a random (possibly non-local) user on instance settings updates
+- The TypeORM logger is now much more configurable
+- The bull dashboard now has the correct cache-control headers set
+
+### Mastodon client API
+- The quote_id property is now returned for note responses
+- The note search query now sets the userId property correctly, solving the problem of mismatching search results between the web client and the Mastodon client API
+- The user profile html cache now gets updated and queried using the correct timestamp for local users, resolving an issue of stale data being displayed in some circumstances
+
+### Miscellaneous
+- The yarn version was updated to 4.1.1
+- The Dockerfile was updated to work better with some build systems that don't support cp -Tr
+- The helm chart now has an option to set the number of worker threads
+
+### Attribution
+This release was made possible by project contributors: Ezeani Emmanuel, Laura Hausmann, Mae Dartmann & mei23
+
+Furthermore, I want to give special thanks to tesaguri for the security disclosure.
+
 ## v2023.12.6
 This is a security release. Upgrading is therefore strongly recommended.
 
