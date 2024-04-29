@@ -31,6 +31,7 @@ A fun, new, open way to experience social media https://iceshrimp.dev
 | iceshrimp.libreTranslate.apiKey | string | `""` |  |
 | iceshrimp.libreTranslate.apiUrl | string | `""` |  |
 | iceshrimp.libreTranslate.managed | bool | `false` |  |
+| iceshrimp.maxNoteLength | integer | `3000` | Max note length |
 | iceshrimp.objectStorage.access_key | string | `""` |  |
 | iceshrimp.objectStorage.access_secret | string | `""` |  |
 | iceshrimp.objectStorage.baseUrl | string | `""` |  |

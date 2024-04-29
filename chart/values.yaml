@@ -68,6 +68,9 @@ iceshrimp:
   # Number of worker processes per replica
   clusterLimit: 1
 
+  # Max note length
+  maxNoteLength: 3000
+
 # https://github.com/bitnami/charts/tree/master/bitnami/postgresql#parameters
 postgresql:
   # -- disable if you want to use an existing db; in which case the values below
