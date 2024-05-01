@@ -584,7 +584,7 @@ export async function updateNote(value: string | IObject, resolver?: Resolver) {
 		text = await htmlToMfm(post.content, post.tag);
 	}
 
-	const cw = post.sensitive && post.summary;
+	const cw = post.summary === "" ? null : post.summary;
 
 	// File parsing
 	const fileList = post.attachment
