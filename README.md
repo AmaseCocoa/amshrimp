@@ -42,7 +42,7 @@ It was forked from <del>Calckey</del> Firefish (itself a fork of Misskey) in mid
 	- Check out [FediDB](https://fedidb.org/software/iceshrimp) or [Fediverse Observer](https://iceshrimp.fediverse.observer/list) to get an overview of the instances that are out there.
 	- Please note that we do not operate a "flagship instance", the only project-affiliated domain is `iceshrimp.dev`.
 - Want to donate to the project?
-  - Our backend lead dev (zotan) is in need of a better laptop, as their current one does not have enough memory. You can contribute [here](https://bunq.me/zotanlaptopcrowdfund). Any leftover money will be given to queers in need.
+  - Our frontend dev (Lilian) needs help paying for healthcare costs. You can contribute [here](https://bunq.me/lilianhealthcarefund). Money from the fund will be used for co-pays, and medical expenses not covered by insurance.
 - Need help or want to contribute? Join the [chat room](https://chat.iceshrimp.dev)!
 
 ---
