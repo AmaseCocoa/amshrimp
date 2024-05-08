@@ -57,7 +57,7 @@ login: Entrar
 loggingIn: Entrando
 logout: Sair
 signup: Criar conta
-uploading: Enviando...
+uploading: Enviando…
 users: Usuários
 addUser: Adicione um usuário
 addInstance: Adicionar um servidor
@@ -95,7 +95,7 @@ alreadyFavorited: Já foi adicionado aos marcadores.
 download: Download
 pageLoadError: Ocorreu um erro ao carregar a página.
 pageLoadErrorDescription: Isso normalmente é causado por erros de rede ou pelo cache
-  do navegador. Tente limpar o cache e, depois de esperar um pouquinho, tente novamente.
+  do navegador. Tente limpar o cache ou esperar um pouquinho e recarregar a página.
 serverIsDead: Esse servidos não está respondendo. Por favor espere um pouco e tente
   novamente.
 youShouldUpgradeClient: Para visualizar essa página, favor reiniciar para atualizar
@@ -110,3 +110,60 @@ followRequests: Pedidos de seguimento
 unfollow: Parar de seguir
 followRequestPending: Pedido de seguimento pendente
 enterEmoji: Insira um emoji
+markAsSensitive: Marcar como sensível
+unmarkAsSensitive: Desmarcar como sensível
+processing: Processando…
+renoted: Impulsionado.
+blockConfirm: Tem certeza de que deseja bloquear esta conta?
+unsuspendConfirm: Tem certeza de que deseja remover a suspensão desta conta?
+flagAsBotDescription: Habilite esta opção se esta conta for controlada por um programa.
+  Se ativado, ela funcionará como um sinalizador para outros desenvolvedores, evitando
+  intermináveis cadeias de interação com outros bots e ajustando os sistemas internos
+  do Iceshrimp para tratar esta conta como um bot.
+sendErrorReportsDescription: "Quando ativado, informações de erro detalhadas serão
+  compartilhadas com o Iceshrimp quando ocorrer um problema, ajudando a melhorar a
+  qualidade do Iceshrimp.\n Isso incluirá informações como a versão do seu sistema
+  operacional, qual navegador você está usando, sua atividade no Iceshrimp, etc."
+general: Geral
+federation: Federação
+receiveFollowRequest: Pedido de seguidor recebido
+followRequestAccepted: Pedido de seguidor aceito
+pinned: Fixar no perfil
+reaction: Reações
+removeReaction: Remover sua reação
+enableEmojiReactions: Ativar reações de emoji
+showEmojisInReactionNotifications: Mostrar emojis em notificações de reação
+reactionSetting: Reações a serem mostradas no seletor de reações
+reactionSettingDescription2: Arraste para organizar, clique para excluir, aperte "+"
+  para adicionar.
+attachCancel: Remover anexo
+enterFileName: Insira nome de arquivo
+suspend: Suspender
+unsuspend: Remover suspensão
+unblockConfirm: Tem certeza de que deseja desbloquear esta conta?
+suspendConfirm: Tem certeza de que deseja suspender esta conta?
+editWidgetsExit: Feito
+sensitive: Sensível
+block: Bloquear
+unblock: Desbloquear
+emoji: Emoji
+emojis: Emoji
+wallpaper: Plano de fundo
+recipient: Destinatário(s)
+annotation: Comentários
+instances: Servidores
+charts: Gráficos
+operations: Operações
+software: Programa
+version: Versão
+metadata: Metadados
+network: Rede
+disk: Disco
+statistics: Estatísticas
+done: Feito
+default: Padrão
+blocked: ''
+migrationConfirm: "Você tem certeza absoluta de que deseja migrar sua conta para {account}?
+  Depois de fazer isso, você não poderá reverter e não poderá usar sua conta normalmente
+  novamente.\nAlém disso, certifique-se de definir esta conta atual como a conta da
+  qual você está migrando."
