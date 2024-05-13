@@ -71,7 +71,7 @@
 		"typescript": "5.1.6",
 		"yaml": "^2.3.4"
 	},
-	"packageManager": "yarn@4.1.1",
+	"packageManager": "yarn@4.2.2",
 	"dependenciesMeta": {
 		"@discordapp/twemoji@14.1.2": {
 			"unplugged": true
