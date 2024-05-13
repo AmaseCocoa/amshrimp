@@ -7070,7 +7070,7 @@ const RAW_RUNTIME_STATE =
           ["qs", "npm:6.11.2"],\
           ["random-seed", "npm:0.3.0"],\
           ["ratelimiter", "npm:3.4.1"],\
-          ["re2", "npm:1.20.9"],\
+          ["re2", "npm:1.20.11"],\
           ["redis-lock", "npm:0.1.4"],\
           ["redis-semaphore", "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:5.3.1"],\
           ["reflect-metadata", "npm:0.1.13"],\
@@ -18018,10 +18018,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["nan", [\
-      ["npm:2.18.0", {\
-        "packageLocation": "./.yarn/unplugged/nan-npm-2.18.0-a51ed5bed5/node_modules/nan/",\
+      ["npm:2.19.0", {\
+        "packageLocation": "./.yarn/unplugged/nan-npm-2.19.0-2f5da4a528/node_modules/nan/",\
         "packageDependencies": [\
-          ["nan", "npm:2.18.0"],\
+          ["nan", "npm:2.19.0"],\
           ["node-gyp", "npm:9.4.0"]\
         ],\
         "linkType": "HARD"\
@@ -20819,12 +20819,12 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["re2", [\
-      ["npm:1.20.9", {\
-        "packageLocation": "./.yarn/unplugged/re2-npm-1.20.9-65a014d791/node_modules/re2/",\
+      ["npm:1.20.11", {\
+        "packageLocation": "./.yarn/unplugged/re2-npm-1.20.11-ab65de125e/node_modules/re2/",\
         "packageDependencies": [\
-          ["re2", "npm:1.20.9"],\
+          ["re2", "npm:1.20.11"],\
           ["install-artifact-from-github", "npm:1.3.5"],\
-          ["nan", "npm:2.18.0"],\
+          ["nan", "npm:2.19.0"],\
           ["node-gyp", "npm:10.0.1"]\
         ],\
         "linkType": "HARD"\
