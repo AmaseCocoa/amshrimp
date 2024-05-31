@@ -11,14 +11,14 @@ export default function (
 	totalItems: any,
 	first?: string,
 	last?: string,
-	orderedItems?: Record<string, unknown>[],
+	orderedItems?: (Record<string, unknown> | string)[],
 ): {
 	id: string | null;
 	type: "OrderedCollection";
 	totalItems: any;
 	first?: string;
 	last?: string;
-	orderedItems?: Record<string, unknown>[];
+	orderedItems?: (Record<string, unknown> | string)[];
 } {
 	const page: any = {
 		id,
