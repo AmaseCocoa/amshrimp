@@ -241,24 +241,29 @@ export const UserRepository = db.getRepository(User).extend({
 	},
 
 	async userFromURI(uri: string): Promise<User | null> {
-		const dbResolver = new DbResolver();
-		let local = await dbResolver.getUserFromApId(uri);
-		if (local) {
-			return local;
+		try {
+			const dbResolver = new DbResolver();
+			let local = await dbResolver.getUserFromApId(uri);
+			if (local) {
+				return local;
+			}
+
+			// fetching Object once from remote
+			const resolver = new Resolver();
+			const object = (await resolver.resolve(uri)) as any;
+
+			// /@user If a URI other than the id is specified,
+			// the URI is determined here
+			if (uri !== object.id) {
+				local = await dbResolver.getUserFromApId(object.id);
+				if (local != null) return local;
+			}
+
+			return isActor(object) ? await createPerson(getApId(object)) : null;
 		}
-
-		// fetching Object once from remote
-		const resolver = new Resolver();
-		const object = (await resolver.resolve(uri)) as any;
-
-		// /@user If a URI other than the id is specified,
-		// the URI is determined here
-		if (uri !== object.id) {
-			local = await dbResolver.getUserFromApId(object.id);
-			if (local != null) return local;
+		catch {
+			return null;
 		}
-
-		return isActor(object) ? await createPerson(getApId(object)) : null;
 	},
 
 	async getHasUnreadAntenna(userId: User["id"]): Promise<boolean> {
