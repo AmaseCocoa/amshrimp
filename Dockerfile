@@ -1,6 +1,6 @@
 # syntax = docker/dockerfile:1.2
 ## Install dev and compilation dependencies, build files
-FROM alpine:3.18 as build
+FROM alpine:3.20 as build
 WORKDIR /iceshrimp
 
 # Install compilation dependencies
@@ -31,7 +31,7 @@ RUN yarn focus-production
 RUN --mount=type=cache,target=/iceshrimp/.yarncache_focused rm -rf .yarncache/* && cp -r .yarn/. .yarncache_focused
 
 ## Runtime container
-FROM alpine:3.18
+FROM alpine:3.20
 WORKDIR /iceshrimp
 
 # Install runtime dependencies
