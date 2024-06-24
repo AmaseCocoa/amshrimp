@@ -50,23 +50,25 @@ function settings() {
 	router.push(`/my/lists/${props.listId}`);
 }
 
-async function timetravel() {
-	const { canceled, result: date } = await os.inputDate({
-		title: i18n.ts.date,
-	});
-	if (canceled) return;
-
-	tlEl.timetravel(date);
-}
+// removed for iceshrimp.dev/iceshrimp/iceshrimp !551
+// async function timetravel() {
+// 	const { canceled, result: date } = await os.inputDate({
+// 		title: i18n.ts.date,
+// 	});
+// 	if (canceled) return;
+// 
+// 	tlEl.timetravel(date);
+// }
 
 const headerActions = $computed(() =>
 	list
 		? [
-				{
-					icon: "ph-calendar-blank ph-bold ph-lg",
-					text: i18n.ts.jumpToSpecifiedDate,
-					handler: timetravel,
-				},
+				// removed for iceshrimp.dev/iceshrimp/iceshrimp !551
+				// {
+				// 	icon: "ph-calendar-blank ph-bold ph-lg",
+				// 	text: i18n.ts.jumpToSpecifiedDate,
+				// 	handler: timetravel,
+				// },
 				{
 					icon: "ph-gear-six ph-bold ph-lg",
 					text: i18n.ts.settings,

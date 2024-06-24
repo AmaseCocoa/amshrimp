@@ -44,14 +44,15 @@ const keymap = $computed(() => ({
 	t: focus,
 }));
 
-async function timetravel() {
-	const { canceled, result: date } = await os.inputDate({
-		title: i18n.ts.date,
-	});
-	if (canceled) return;
-
-	tlEl.timetravel(date);
-}
+// removed for iceshrimp.dev/iceshrimp/iceshrimp !551
+// async function timetravel() {
+// 	const { canceled, result: date } = await os.inputDate({
+// 		title: i18n.ts.date,
+// 	});
+// 	if (canceled) return;
+// 
+// 	tlEl.timetravel(date);
+// }
 
 function settings() {
 	router.push(`/my/antennas/${props.antennaId}`);
