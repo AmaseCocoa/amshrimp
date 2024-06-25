@@ -5,9 +5,15 @@ metadata:
   labels:
     {{- include "iceshrimp.labels" . | nindent 4 }}
 spec:
-  {{- if not .Values.autoscaling.enabled }}
+ {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
   {{- end }}
+
+  {{- if .Values.iceshrimp.deploymentStrategy }}
+  strategy:
+    {{- toYaml .Values.iceshrimp.deploymentStrategy | nindent 4 }}
+  {{- end }}
+
   selector:
     matchLabels:
       {{- include "iceshrimp.selectorLabels" . | nindent 6 }}

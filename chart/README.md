@@ -52,6 +52,7 @@ A fun, new, open way to experience social media https://iceshrimp.dev
 | iceshrimp.smtp.port | int | `587` |  |
 | iceshrimp.smtp.server | string | `"smtp.mailgun.org"` |  |
 | iceshrimp.smtp.useImplicitSslTls | bool | `false` |  |
+| iceshrimp.strategy | object | `{}` | Override DeploymentStrategy for Iceshrimp |
 | elasticsearch | object | `{"auth":{},"enabled":false,"hostname":"","port":9200,"ssl":false}` | https://github.com/bitnami/charts/tree/master/bitnami/elasticsearch#parameters |
 | fullnameOverride | string | `""` |  |
 | image.pullPolicy | string | `"IfNotPresent"` |  |

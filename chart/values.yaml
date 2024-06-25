@@ -42,7 +42,7 @@ iceshrimp:
     prefix: files
     endpoint: "" # e.g. "nyc3.digitaloceanspaces.com:443"
     region: "" # e.g. "nyc3"
-  
+
   localStorage:
     enabled: true
     claimName: null
@@ -53,7 +53,14 @@ iceshrimp:
     annotations:
       helm.sh/resource-policy: keep
     size: 10Gi
-  
+
+  # Deployment strategy (optional), see https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#strategy
+  # deploymentStrategy:
+  #   type: RollingUpdate
+  #   rollingUpdate:
+  #     maxUnavailable: 0
+  #     maxSurge: 1
+
   # -- If you want to allow iceshrimp to connect to private ips, enter the cidrs here.
   allowedPrivateNetworks: []
   # - "10.0.0.0/8"
