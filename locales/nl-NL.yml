@@ -1257,11 +1257,6 @@ _aboutIceshrimp:
     de bovenstaande link om je naam hier te krijgen!
   contributors: Belangrijkste bijdragers
   allContributors: Alle bijdragers
-_experiments:
-  postImportsCaption: Hiermee kunnen gebruikers hun posts van eerdere Iceshrimp, Misskey,
-    Mastodon, Akkoma en Pleroma-accounts importen. Dit kan tijdensh het laden voor
-    traagheid zorgen als de wachtrij vol zit.
-  enablePostImports: Post-importeren aanzetten
 hiddenTagsDescription: 'Geef de hashtags (zonder #) op die je uit Trending en Verkennen
   wilt verbergen. Verborgen hashtags zijn nog steeds ontdekbaar via andere manieren.'
 pinnedClipId: ID van de clip on vast te zetten

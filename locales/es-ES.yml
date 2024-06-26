@@ -2188,12 +2188,6 @@ _feeds:
   copyFeed: Copiar feed
   rss: RSS
   atom: Atom
-_experiments:
-  title: Experimentos
-  enablePostImports: Activar importaciones de publicaciones
-  postImportsCaption: Permite a los usuarios importar publicaciones de cuentas antiguas
-    de Iceshrimp, Misskey, Mastodon, Akkoma y Pleroma. Puede que cause ralentizaciones
-    durante la carga si sufres cuello de botella.
 _skinTones:
   mediumDark: Medio oscuro
   dark: Oscuro

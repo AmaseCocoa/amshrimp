@@ -1815,10 +1815,6 @@ _messaging:
   dms: 私信
   groups: 群组
 migration: 迁移
-_experiments:
-  title: 实验性功能
-  postImportsCaption: 允许用户从过去的 Iceshrimp、Iceshrimp、Mastodon、Akkoma 和 Pleroma 账号导入帖子。如果您的队列出现拥堵，则可能会导致加载速度减慢。
-  enablePostImports: 启用帖子导入
 license: 许可证
 flagSpeakAsCatDescription: 在猫模式下您的帖子会喵化
 allowedInstances: 白名单服务器

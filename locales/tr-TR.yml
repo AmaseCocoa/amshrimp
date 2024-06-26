@@ -1859,12 +1859,6 @@ _notification:
   youReceivedFollowRequest: Bir takip isteği geldi
   youGotPoll: '{name} anketinde oylama yaptı'
   youGotMessagingMessageFromUser: '{name} sana bir sohbet mesajı gönderdi'
-_experiments:
-  title: Deneyler
-  postImportsCaption: Kullanıcıların geçmiş Iceshrimp, Iceshrimp, Mastodon, Akkoma ve
-    Pleroma hesaplarından gönderilerini içe aktarmalarına izin verir. Kuyruğunuz tıkanırsa
-    yükleme sırasında yavaşlamalara neden olabilir.
-  enablePostImports: Gönderi içeri aktarmasını aktif et
 _dialog:
   charactersExceeded: 'Maksimum karakter aşıldı! Geçerli: {current}/Sınır: {max}'
   charactersBelow: 'Yeterli karakter yok! Geçerli: {current}/Sınır: {min}'

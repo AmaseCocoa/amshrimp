@@ -2103,15 +2103,6 @@ editNote: Modifier publication
 edited: "Modifié à {date} {time}"
 flagShowTimelineRepliesDescription: Si activé, affiche dans le fil les réponses des
   utilisatieur·rice·s aux publications des autres.
-_experiments:
-  alpha: Alpha
-  beta: Beta
-  enablePostImports: Autoriser l’importation de publications
-  title: Expérimentations
-  postImportsCaption: Permet aux utilisateurs d’importer leurs publications à partir
-    de leurs anciens comptes Iceshrimp, Misskey, Mastodon, Akkoma et Pleroma. Cela
-    peut entraîner des ralentissements lors du chargement si votre file d’attente
-    est congestionnée.
 findOtherInstance: Trouver une autre instance
 userSaysSomethingReasonQuote: "{name} a cité une publication contenant {reason}"
 signupsDisabled: Les inscriptions sur cette instance sont actuellement désactivés,

@@ -2098,12 +2098,6 @@ preventAiLearningDescription: Zażądaj, by modele językowe AI osób trzecich n
 silencedWarning: Ta strona się pokazuje, ponieważ wymienieni użytkownicy są z serwerów
   które Twój admin wyciszył, więc mogą być oni potencjalnymi spamerami.
 verifiedLink: Zweryfikowany link
-_experiments:
-  enablePostImports: Włącz import postów
-  postImportsCaption: Pozwala użytkownikom na zaimportowanie ich postów z poprzednich
-    kont Iceshrimp, Misskey, Mastodon, Akkomy czy Pleromy. Może to spowodować spowolnienia
-    podczas ładowania, jeśli twoja kolejka ma wąskie gardło.
-  title: Eksperymenty
 alwaysExpandCws: Zawsze rozwijaj posty z CW
 video: Film
 swipeOnMobile: Zezwól na przesuwanie palcem między stronami

@@ -2143,12 +2143,6 @@ _deck:
     channel: "Channel"
     mentions: "Mentions"
     direct: "Direct messages"
-_experiments:
-  title: "Experiments"
-  enablePostImports: "Enable post imports"
-  postImportsCaption: "Allows users to import their posts from past Iceshrimp, Misskey,
-    Mastodon, Akkoma, and Pleroma accounts. It may cause slowdowns during load if
-    your queue is bottlenecked."
 _dialog:
   charactersExceeded: "Max characters exceeded! Current: {current}/Limit: {max}"
   charactersBelow: "Not enough characters! Current: {current}/Limit: {min}"

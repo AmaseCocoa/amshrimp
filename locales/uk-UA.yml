@@ -1904,12 +1904,6 @@ _instanceMute:
   title: Приховує записи з перелічених серверів.
   instanceMuteDescription2: Розділити новими рядками
   heading: Список серверів для заглушення
-_experiments:
-  enablePostImports: Ввімкнути імпорт записів
-  title: Експерименти
-  postImportsCaption: Дозволяє користувачам імпортувати свої публікації з минулих
-    облікових записів Iceshrimp, Misskey, Mastodon, Akkoma і Pleroma. Це може знизити
-    швидкість під час завантаження, якщо ваша черга перевантажена.
 _dialog:
   charactersExceeded: 'Перевищено максимальну кількість символів! Обмеження: {current}/{max}'
   charactersBelow: 'Недостатньо символів! Обмеження: {current}/{min}'

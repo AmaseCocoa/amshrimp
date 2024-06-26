@@ -2101,12 +2101,6 @@ accessibility: Erreichbarkeit
 jumpToPrevious: Zum Vorherigen springen
 silencedWarning: Diese Meldung wird angezeigt, weil diese Nutzer von Servern stammen,
   die Ihr Administrator abgeschaltet hat, so dass es sich möglicherweise um Spam handelt.
-_experiments:
-  title: Funktionstests
-  enablePostImports: Beitragsimporte aktivieren
-  postImportsCaption: Erlaubt es Nutzer:innen ihre Posts von alten Iceshrimp, Iceshrimp,
-    Mastodon, Akkoma und Pleroma Accounts zu importieren. Bei Engpässen in der Warteschlange
-    kann es zu Verlangsamungen beim Laden während des Imports kommen.
 noGraze: Bitte deaktivieren Sie die Browsererweiterung "Graze for Mastodon", da sie
   die Funktion von Iceshrimp stört.
 indexFrom: Indexieren ab Beitragskennung aufwärts

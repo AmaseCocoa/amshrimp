@@ -1898,11 +1898,6 @@ noteId: 投稿のID
 hiddenTagsDescription: 'トレンドと「みつける」から除外したいハッシュタグを（先頭の # を除いて）改行区切りで入力してください。この設定はトレンドと「みつける」以外には影響しません。'
 hiddenTags: 非表示にするハッシュタグ
 apps: "アプリ"
-_experiments:
-  title: 試験的な機能
-  postImportsCaption: 
-    ユーザーが過去の投稿をIceshrimp・Iceshrimp・Mastodon・Akkoma・Pleromaからインポートすることを許可します。キューが溜まっているときにインポートするとサーバーに負荷がかかる可能性があります。
-  enablePostImports: 投稿のインポートを有効にする
 sendModMail: モデレーション通知を送る
 deleted: 削除済み
 editNote: 投稿を編集
