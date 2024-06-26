@@ -544,11 +544,6 @@ export const routes = [
 				component: page(() => import("./pages/admin/custom-css.vue")),
 			},
 			{
-				path: "/experiments",
-				name: "experiments",
-				component: page(() => import("./pages/admin/experiments.vue")),
-			},
-			{
 				path: "/",
 				component: page(() => import("./pages/_empty_.vue")),
 			},

@@ -274,12 +274,6 @@ const menuDef = $computed(() => [
 							to: "/admin/database",
 							active: currentPage?.route.name === "database",
 						},
-						{
-							icon: "ph-flask ph-bold ph-lg",
-							text: i18n.ts._experiments.title,
-							to: "/admin/experiments",
-							active: currentPage?.route.name === "experiments",
-						},
 					],
 				},
 		  ]
