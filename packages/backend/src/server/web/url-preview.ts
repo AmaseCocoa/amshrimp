@@ -1,5 +1,5 @@
 import type Koa from "koa";
-import summaly from "summaly";
+import summaly from "@iceshrimp/summaly";
 import { fetchMeta } from "@/misc/fetch-meta.js";
 import Logger from "@/services/logger.js";
 import config from "@/config/index.js";
@@ -40,6 +40,7 @@ export const urlPreviewHandler = async (ctx: Koa.Context) => {
 			: await summaly.default(url, {
 					followRedirects: false,
 					lang: lang ?? "en-US",
+				    userAgent: config.userAgent
 			  });
 
 		logger.succ(`Got preview of ${url}: ${summary.title}`);
