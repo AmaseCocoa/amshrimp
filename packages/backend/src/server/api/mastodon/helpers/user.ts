@@ -215,6 +215,7 @@ export class UserHelpers {
         const user = ctx.user as ILocalUser;
         const acct = UserConverter.encode(user, ctx);
         const profile = UserProfiles.findOneByOrFail({ userId: user.id });
+		const followRequests = FollowRequests.count({ where: { followeeId: user.id } });
         const privacy = this.getDefaultNoteVisibility(ctx);
         const fields = profile.then(profile => profile.fields.map(field => {
             return {
@@ -229,6 +230,7 @@ export class UserHelpers {
                 privacy: privacy.then(p => VisibilityConverter.encode(p)),
                 sensitive: profile.then(p => p.alwaysMarkNsfw),
                 language: profile.then(p => p.lang ?? ''),
+				follow_requests_count: followRequests,
             };
 
             const result = {
