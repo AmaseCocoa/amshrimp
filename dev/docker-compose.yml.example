@@ -22,7 +22,7 @@ services:
   redis:
     restart: always
     container_name: iceshrimp_redis
-    image: docker.io/redis:7.0-alpine
+    image: docker.io/valkey/valkey:7-alpine
     networks:
       - network
     volumes:
