@@ -1,12 +1,12 @@
 import type Koa from "koa";
 import { fetchMeta } from "@/misc/fetch-meta.js";
-import manifest from "./manifest.json" assert { type: "json" };
+import fs from "fs";
+import path from 'path';
+
+const manifest = JSON.parse(fs.readFileSync(path.resolve('./src/server/web/manifest.json'), 'utf-8'));
 
 export const manifestHandler = async (ctx: Koa.Context) => {
-	// TODO
-	//const res = structuredClone(manifest);
-	const res = JSON.parse(JSON.stringify(manifest));
-
+	const res = manifest;
 	const instance = await fetchMeta(true);
 
 	res.short_name = instance.name || "Iceshrimp";
