@@ -4,7 +4,7 @@ import { Followings, Notes } from "@/models/index.js";
 import { Cache } from "@/misc/cache.js";
 import { apiLogger } from "@/server/api/logger.js";
 
-const cache = new Cache<number>("homeTlQueryData", 60 * 60 * 24);
+export const cache = new Cache<number>("homeTlQueryData", 60 * 60 * 24);
 const cutoff = 250; // 250 posts in the last 7 days, constant determined by comparing benchmarks for cutoff values between 100 and 2500
 const logger = apiLogger.createSubLogger("heuristics");
 

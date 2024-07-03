@@ -9,6 +9,7 @@ import { Users, DriveFiles } from "@/models/index.js";
 import type { DbUserImportJobData } from "@/queue/types.js";
 import { queueLogger } from "../../logger.js";
 import type Bull from "bull";
+import { cache as heuristic } from "@/server/api/common/generate-following-query.js";
 
 const logger = queueLogger.createSubLogger("import-following");
 
@@ -111,6 +112,7 @@ export async function importFollowing(
 		}
 	}
 
+	await heuristic.delete(user.id);
 	logger.succ("Imported");
 	done();
 }
