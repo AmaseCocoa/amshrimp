@@ -7,7 +7,7 @@ export class FileConverter {
             type: this.encodefileType(f.type),
             url: f.url ?? "",
             remote_url: f.url,
-            preview_url: f.thumbnailUrl,
+            preview_url: f.thumbnailUrl ?? f.url ?? "",
             text_url: f.url,
             meta: {
                 width: f.properties.width,

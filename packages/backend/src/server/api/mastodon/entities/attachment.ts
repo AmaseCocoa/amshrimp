@@ -40,7 +40,7 @@ namespace MastodonEntity {
         type: "unknown" | "image" | "gifv" | "video" | "audio";
         url: string;
         remote_url: string | null;
-        preview_url: string | null;
+        preview_url: string;
         text_url: string | null;
         meta: Meta | null;
         description: string | null;
