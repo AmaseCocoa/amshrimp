@@ -1,6 +1,6 @@
 on:
   push:
-    branches-ignore:
+    branches:
       - 'dev'
 jobs:
   test-build:
@@ -29,3 +29,19 @@ jobs:
         run: |
           cp .config/ci.yml .config/default.yml
           yarn run migrate
+  build-and-push:
+    runs-on: docker
+    needs: test-build
+    container:
+      image: iceshrimp.dev/iceshrimp/ci-env:latest
+      options: --volume /root/.docker:/root/.docker
+    steps:
+      - name: Clone repository
+        run: git clone https://iceshrimp.dev/iceshrimp/iceshrimp.git --branch=${{ github.ref_name }} --depth=1 .
+      - name: Build docker image
+        shell: bash
+        run: |
+          docker login iceshrimp.dev -u ${{ github.actor }} -p ${{ secrets.REGISTRY_TOKEN }}
+          docker buildx create --name iceshrimp-ci 2>&1 &>/dev/null || true
+          docker buildx build -t iceshrimp.dev/${GITHUB_REPOSITORY@L}:$GITHUB_REF_NAME --provenance=false --platform=linux/amd64,linux/arm64 --push --builder iceshrimp-ci .
+          docker buildx prune --keep-storage 20G
