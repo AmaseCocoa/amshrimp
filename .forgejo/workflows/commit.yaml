@@ -34,7 +34,7 @@ jobs:
     needs: test-build
     container:
       image: iceshrimp.dev/iceshrimp/ci-env:latest
-      options: --volume /root/.docker:/root/.docker
+      options: --volume /home/zotan/.docker:/root/.docker
     steps:
       - name: Clone repository
         run: git clone https://iceshrimp.dev/iceshrimp/iceshrimp.git --branch=${{ github.ref_name }} --depth=1 .
