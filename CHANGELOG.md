@@ -718,4 +718,4 @@ It also includes cherry-picked contributions from external contributors: Namekuj
 
 ---
 
-This file lists all major changes made since the fork from Firefish on 2023-07-21. For changes prior to that date, please reference the [Firefish](https://git.joinfirefish.org/firefish/firefish/-/tree/76ad0a19b3a64eaecb4da31f20c229e423ee2095/) repository.
+This file lists all major changes made since the fork from Firefish on 2023-07-21. For changes prior to that date, please reference the [Firefish](https://firefish.dev/firefish/firefish/-/tree/76ad0a19b3a64eaecb4da31f20c229e423ee2095/) repository.
