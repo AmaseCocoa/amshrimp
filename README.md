@@ -7,11 +7,11 @@ It was forked from <del>Calckey</del> Firefish (itself a fork of Misskey) in mid
 > **Note**
 > This project is **not** inactive.
 > 
-> Most of our current development resources are going into the [rewrite](/iceshrimp/Iceshrimp.NET), to further our goal of increasing stability and performance.
+> Almost all of our current development efforts are going into the Iceshrimp.NET [rewrite](/iceshrimp/Iceshrimp.NET), to further our goal of increasing stability and performance.<br/>
+> This means that Iceshrimp-JS (this project) is only receiving security patches and minor bug fixes. Support is of course still available on the usual channels.
 > 
-> This means that major changes to the JS codebase (this project), and especially to the database schema, are on hold for the time being. Bugs will of course still be fixed, and support is still available on the usual channels.
-> 
-> Once the rewrite is finished, there will be an easy upgrade path for existing Iceshrimp instances.
+> There is already an easy upgrade path available for existing Iceshrimp instances, though we don't recommend taking it just yet.<br/>
+> With Iceshrimp.NET getting ever-closer to a stable release, we hope you're just as excited as we are. Check out the [repository](/iceshrimp/Iceshrimp.NET) for more information.
 
 ---
 - Highlighted changes:
