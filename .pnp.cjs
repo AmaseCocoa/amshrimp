@@ -3726,10 +3726,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@syuilo/aiscript", [\
-      ["npm:0.16.0", {\
-        "packageLocation": "./.yarn/cache/@syuilo-aiscript-npm-0.16.0-078d966ef6-5c77fc596d.zip/node_modules/@syuilo/aiscript/",\
+      ["npm:0.17.0", {\
+        "packageLocation": "./.yarn/cache/@syuilo-aiscript-npm-0.17.0-005e068ae6-2a10b3d29a.zip/node_modules/@syuilo/aiscript/",\
         "packageDependencies": [\
-          ["@syuilo/aiscript", "npm:0.16.0"],\
+          ["@syuilo/aiscript", "npm:0.17.0"],\
           ["seedrandom", "npm:3.0.5"],\
           ["stringz", "npm:2.1.0"],\
           ["uuid", "npm:9.0.1"]\
@@ -8512,7 +8512,7 @@ const RAW_RUNTIME_STATE =
           ["@rollup/plugin-alias", "virtual:658502eb4296e93abedc18b6aa9b26978f434f08d98e21ebb0e725354b8bb54b62db9c4a1893e460c694ff7500ff5cbafa4457b0dfd26b5838868666c861e990#npm:5.1.0"],\
           ["@rollup/plugin-json", "virtual:658502eb4296e93abedc18b6aa9b26978f434f08d98e21ebb0e725354b8bb54b62db9c4a1893e460c694ff7500ff5cbafa4457b0dfd26b5838868666c861e990#npm:6.0.1"],\
           ["@rollup/pluginutils", "virtual:658502eb4296e93abedc18b6aa9b26978f434f08d98e21ebb0e725354b8bb54b62db9c4a1893e460c694ff7500ff5cbafa4457b0dfd26b5838868666c861e990#npm:5.1.0"],\
-          ["@syuilo/aiscript", "npm:0.16.0"],\
+          ["@syuilo/aiscript", "npm:0.17.0"],\
           ["@types/escape-regexp", "npm:0.0.1"],\
           ["@types/glob", "npm:8.1.0"],\
           ["@types/gulp", "npm:4.0.13"],\

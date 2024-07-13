@@ -2691,14 +2691,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@syuilo/aiscript@npm:0.16.0":
-  version: 0.16.0
-  resolution: "@syuilo/aiscript@npm:0.16.0"
+"@syuilo/aiscript@npm:0.17.0":
+  version: 0.17.0
+  resolution: "@syuilo/aiscript@npm:0.17.0"
   dependencies:
     seedrandom: "npm:3.0.5"
     stringz: "npm:2.1.0"
     uuid: "npm:9.0.1"
-  checksum: 10/5c77fc596dcff0e7ac30ba33f2550430dc1d69bd33075811d7822efb6102bae4169f455c867eac5821bee88993941bc6003bd981ad64885b2e643cb4bc260d4a
+  checksum: 10/2a10b3d29ab94cc267957aa9a8e0ca199fabc298a5e111fcce2a355d70eee141aae87c015f77c398f8a3bbd107fbf49e2054ec2e343c36dd4f8f2e1a64e9e631
   languageName: node
   linkType: hard
 
@@ -6660,7 +6660,7 @@ __metadata:
     "@rollup/plugin-alias": "npm:^5.1.0"
     "@rollup/plugin-json": "npm:^6.0.1"
     "@rollup/pluginutils": "npm:^5.1.0"
-    "@syuilo/aiscript": "npm:0.16.0"
+    "@syuilo/aiscript": "npm:0.17.0"
     "@types/escape-regexp": "npm:0.0.1"
     "@types/glob": "npm:8.1.0"
     "@types/gulp": "npm:4.0.13"
