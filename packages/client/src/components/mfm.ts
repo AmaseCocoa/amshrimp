@@ -1,6 +1,7 @@
 import { defineComponent, h } from "vue";
 import * as mfm from "mfm-js";
 import type { VNode } from "vue";
+import CkFollowMouse from "./CkFollowMouse.vue";
 import MkUrl from "@/components/global/MkUrl.vue";
 import MkTime from '@/components/global/MkTime.vue';
 import MkLink from "@/components/MkLink.vue";
@@ -274,6 +275,24 @@ export default defineComponent({
 									const degrees = parseInt(token.props.args.deg) || "90";
 									style = `transform: ${rotate}(${degrees}deg); transform-origin: center center;`;
 									break;
+								}
+								case 'followmouse': {
+									// Make sure advanced MFM is on and that reduced motion is off
+			
+									let x = (!!token.props.args.x);
+									let y = (!!token.props.args.y);
+			
+									if (!x && !y) {
+										x = true;
+										y = true;
+									}
+			
+									return h(CkFollowMouse, {
+										x: x,
+										y: y,
+										speed: validTime(token.props.args.speed) ?? '0.1s',
+										rotateByVelocity: !!token.props.args.rotateByVelocity,
+									}, genEl(token.children));
 								}
 								case "position": {
 									const x = parseFloat(token.props.args.x ?? "0");
