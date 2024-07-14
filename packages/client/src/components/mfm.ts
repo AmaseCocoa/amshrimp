@@ -2,6 +2,7 @@ import { defineComponent, h } from "vue";
 import * as mfm from "mfm-js";
 import type { VNode } from "vue";
 import MkUrl from "@/components/global/MkUrl.vue";
+import MkTime from '@/components/global/MkTime.vue';
 import MkLink from "@/components/MkLink.vue";
 import MkMention from "@/components/MkMention.vue";
 import MkEmoji from "@/components/global/MkEmoji.vue";
@@ -330,6 +331,23 @@ export default defineComponent({
 										let text = rt.type === 'text' ? rt.props.text : '';
 										return h('ruby', {}, [...genEl(token.children.slice(0, token.children.length - 1), scale), h('rt', text.trim())]);
 									}
+								}
+								case 'unixtime': {
+									const child = token.children[0];
+									const unixtime = parseInt(child.type === 'text' ? child.props.text : '');
+									return h('span', {
+										style: 'display: inline-block; font-size: 90%; border: solid 1px var(--divider); border-radius: var(--radius-ellipse); padding: 4px 10px 4px 6px;',
+									}, [
+										h('i', {
+											class: 'ph-clock ph-bold ph-lg',
+											style: 'margin-right: 0.25em;',
+										}),
+										h(MkTime, {
+											key: Math.random(),
+											time: unixtime * 1000,
+											mode: 'detail',
+										}),
+									]);
 								}
 								case "small": {
 									return h(
