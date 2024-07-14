@@ -14,6 +14,7 @@ import MkA from "@/components/global/MkA.vue";
 import { host } from "@/config";
 import { reducedMotion } from "@/scripts/reduced-motion";
 import { defaultStore } from "@/store";
+import { safeParseFloat } from "@/scripts/safe-parse";
 
 export default defineComponent({
 	props: {
@@ -69,6 +70,11 @@ export default defineComponent({
 		// 		? (e.startsWith("steps") ? e : "cubic-bezier" + e)
 		// 		: null
 		// }
+
+		const validColor = (c: unknown): string | null => {
+			if (typeof c !== 'string') return null;
+			return c.match(/^[0-9a-f]{3,6}$/i) ? c : null;
+		};
 
 		const genEl = (ast: mfm.MfmNode[]) =>
 			concat(
@@ -298,6 +304,20 @@ export default defineComponent({
 									let color = token.props.args.color;
 									if (!/^[0-9a-f]{3,6}$/i.test(color)) color = "f00";
 									style = `background-color: #${color};`;
+									break;
+								}
+								case 'border': {
+									let color = validColor(token.props.args.color);
+									color = color ? `#${color}` : 'var(--accent)';
+									let b_style = token.props.args.style;
+									if (
+										typeof b_style !== 'string' ||
+										!['hidden', 'dotted', 'dashed', 'solid', 'double', 'groove', 'ridge', 'inset', 'outset']
+											.includes(b_style)
+									) b_style = 'solid';
+									const width = safeParseFloat(token.props.args.width) ?? 1;
+									const radius = safeParseFloat(token.props.args.radius) ?? 0;
+									style = `border: ${width}px ${b_style} ${color}; border-radius: ${radius}px;${token.props.args.noclip ? '' : ' overflow: clip;'}`;
 									break;
 								}
 								case "small": {
