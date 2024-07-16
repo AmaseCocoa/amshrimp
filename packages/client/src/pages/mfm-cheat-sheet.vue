@@ -437,6 +437,55 @@
 						</div>
 					</div>
 				</div>
+				<div class="section _block">
+					<div class="title">{{ i18n.ts._mfm.border }}</div>
+					<div class="content">
+						<p>{{ i18n.ts._mfm.borderDescription }}</p>
+						<div class="preview">
+							<Mfm :text="preview_border" />
+							<MkTextarea v-model="preview_border"
+								><span>MFM</span></MkTextarea
+							>
+						</div>
+					</div>
+				</div>
+				<div class="section _block">
+					<div class="title">{{ i18n.ts._mfm.ruby }}</div>
+					<div class="content">
+						<p>{{ i18n.ts._mfm.rubyDescription }}</p>
+						<div class="preview">
+							<Mfm :text="preview_ruby" />
+							<MkTextarea v-model="preview_ruby"
+								><span>MFM</span></MkTextarea
+							>
+						</div>
+					</div>
+				</div>
+				<div class="section _block">
+					<div class="title">{{ i18n.ts._mfm.unixtime }}</div>
+					<div class="content">
+						<p>{{ i18n.ts._mfm.unixtimeDescription }}</p>
+						<div class="preview">
+							<Mfm :text="preview_unixtime" />
+							<MkTextarea v-model="preview_unixtime"
+								><span>MFM</span></MkTextarea
+							>
+						</div>
+					</div>
+				</div>
+				<div class="section _block">
+					<div class="title">{{ i18n.ts._mfm.followmouse }}</div>
+					<div class="content">
+						<p>{{ i18n.ts._mfm.followmouseDescription }}</p>
+						<div class="preview">
+							<MkButton @click="show_followmouse_preview = !show_followmouse_preview">{{ i18n.ts._mfm.followmouseToggle }}</MkButton>
+							<Mfm v-if="show_followmouse_preview" :text="preview_followmouse" />
+							<MkTextarea v-model="preview_followmouse"
+								><span>MFM</span></MkTextarea
+							>
+						</div>
+					</div>
+				</div>
 			</div>
 		</MkSpacer>
 	</MkStickyContainer>
@@ -448,6 +497,7 @@ import MkTextarea from "@/components/form/textarea.vue";
 import { definePageMetadata } from "@/scripts/page-metadata";
 import { i18n } from "@/i18n";
 import { instance } from "@/instance";
+import MkButton from "@/components/MkButton.vue";
 
 defineProps<{
 	popup?: boolean;
@@ -528,6 +578,20 @@ let preview_plain = $ref(
 );
 let preview_fade = $ref(
 	"$[fade 🍮] $[fade.out 🍮] $[fade.speed=3s 🍮] $[fade.delay=3s 🍮]",
+);
+let preview_border = $ref(
+	`$[border ${i18n.ts._mfm.dummy}]\n$[border.width=4 ${i18n.ts._mfm.dummy}]\n$[border.radius=8 ${i18n.ts._mfm.dummy}]\n$[border.style=dashed ${i18n.ts._mfm.dummy}]\n$[border.color=0f0 ${i18n.ts._mfm.dummy}]`
+);
+let preview_unixtime = $ref(
+	"$[unixtime 1689886800]",
+);
+let preview_ruby = $ref(
+	"$[ruby にゃ nya]",
+);
+
+let show_followmouse_preview = $ref(false);
+let preview_followmouse = $ref(
+	"$[followmouse 🍮]\n$[followmouse.speed=1s 🍮slow]\n$[followmouse.rotateByVelocity 🍮rotating]\n$[followmouse.x=10 🍮x]\n$[followmouse.y=10 🍮y]",
 );
 
 definePageMetadata({

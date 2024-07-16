@@ -1341,6 +1341,15 @@ _mfm:
   plain: "Plain"
   plainDescription: "Deactivates the effects of all MFM contained within this MFM
     effect."
+  border: "Border"
+  borderDescription: "Adds a border around content."
+  ruby: "Ruby"
+  rubyDescription: "Render a small annotation above text, Usually used for showing pronounciations of East Asian characters."
+  unixtime: "Unix Time"
+  unixtimeDescription: "Convert a number of seconds since 1st of January, 1970 to a readable date."
+  followmouse: "Follow Mouse"
+  followmouseDescription: "Make content follow the mouse cursor."
+  followmouseToggle: "Toggle preview"
 _instanceTicker:
   none: "Never show"
   remote: "Show for remote users"
