@@ -33,7 +33,7 @@ This release contains minor fixes and improvements. Upgrading is recommended for
 ### Attribution
 This release was made possible by project contributors: AverageDood, Gersonzao, Kopper, Laura Hausmann, Mae Dartmann, Pyrox, Tournesol, ari melody, limepotato, mia & zotan
 
-It also includes cherry-picked contributions from external contributors: naskya
+It also includes cherry-picked contributions from external contributors: naskya (firefish), ChaoticLeah (cutiekey)
 
 ## v2023.12.7
 This is a security release. Upgrading is therefore strongly recommended.
