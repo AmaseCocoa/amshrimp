@@ -1,3 +1,40 @@
+## v2023.12.8
+This release contains minor fixes and improvements. Upgrading is recommended for all server operators.
+
+### Highlights
+- AiScript has been updated to v0.17.0
+- Several new MFM functions have been added
+
+### Backend
+- Pinned notes are rendered as links instead of objects, improving privacy
+- Sporadic errors while scrolling through followers/following lists were fixed
+- The link preview generator now sends a proper user agent instead of identifying itself as a generic bot
+- The home timeline query heuristic now gets reset when follow lists are being imported, resolving a timeline performance edge case
+
+### Mastodon client API
+- The verify_credentials response now includes the follow_requests_count property, improving compatibiltiy with certain Mastodon clients
+- Attachments will now fall back to their full res version if they don't have a thumbnail, fixing a crash with the official Mastodon for Android app
+
+### Frontend
+- The placeholder timetravel buttons have been removed
+- The experiments page has been removed
+
+### Miscellaneous
+- The helm chart was updated and now has more configuration options
+- The yarn version was updated to v4.3.1
+- The README was updated to better reflect the current development situation in relation to the rewrite
+- The project now builds against NodeJS 22
+- The dockerfile was updated & now builds against alpine 3.20
+- Backend dependencies have been updated
+- The recommended key/value store was switched to valkey
+- The CI configuration has been updated
+- Various translation updates
+
+### Attribution
+This release was made possible by project contributors: AverageDood, Gersonzao, Kopper, Laura Hausmann, Mae Dartmann, Pyrox, Tournesol, ari melody, limepotato, mia & zotan
+
+It also includes cherry-picked contributions from external contributors: naskya
+
 ## v2023.12.7
 This is a security release. Upgrading is therefore strongly recommended.
 
