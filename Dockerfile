@@ -4,7 +4,7 @@ FROM alpine:3.20 as build
 WORKDIR /iceshrimp
 
 # Install compilation dependencies
-RUN apk add --no-cache --no-progress git alpine-sdk vips-dev python3 py3-setuptools nodejs-current npm vips
+RUN apk add --no-cache --no-progress git alpine-sdk python3 py3-setuptools nodejs-current npm
 
 # Copy in all files for the build
 COPY . ./
@@ -35,7 +35,7 @@ FROM alpine:3.20
 WORKDIR /iceshrimp
 
 # Install runtime dependencies
-RUN apk add --no-cache --no-progress tini ffmpeg vips-dev zip unzip nodejs-current libheif-dev
+RUN apk add --no-cache --no-progress tini ffmpeg zip unzip nodejs-current libheif-dev
 
 # Copy built files
 COPY --from=build /iceshrimp /iceshrimp
