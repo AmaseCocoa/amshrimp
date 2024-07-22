@@ -993,9 +993,9 @@ _registry:
   domain: "Domaine"
   createKey: "Créer une clé"
 _aboutIceshrimp:
-  about: "Iceshrimp est un média social décentralisé et fédéré utilisant ActivityPub.\n\
-    C'est un fork de Calckey/Firefish (lui-même fork de Misskey) qui se concentre
-    sur la stabilité, les performances et la facilité d'utilisation plutôt que sur
+  about: "Iceshrimp est un média social décentralisé et fédéré utilisant ActivityPub.\n
+    C’est un fork de Calckey/Firefish (lui-même fork de Misskey) qui se concentre
+    sur la stabilité, les performances et la facilité d’utilisation plutôt que sur
     de nouvelles fonctionnalités."
   contributors: "Principaux contributeurs"
   allContributors: "Tous les contributeurs"
@@ -1114,6 +1114,17 @@ _mfm:
   backgroundDescription: Changer la couleur d’arrière-plan d’un texte.
   background: Couleur d’arrière-plan
   plain: Simple
+  border: Bordure
+  rubyDescription: Affiche une petite annotation au-dessus du texte, généralement
+    utilisée pour afficher les prononciations des caractères d’Asie de l’Est.
+  borderDescription: Ajoute une bordure autour du contenu.
+  ruby: Rubis
+  unixtime: Heure Unix (Posix)
+  unixtimeDescription: Convertit un nombre de secondes depuis le 1er janvier 1970
+    en une date lisible.
+  followmouse: Suivre la souris
+  followmouseDescription: Faire en sorte que le contenu suive le curseur de la souris.
+  followmouseToggle: Afficher/Masquer l’aperçu
 _instanceTicker:
   none: "Cacher"
   remote: "Montrer pour les utilisateur·ice·s distant·e·s"
@@ -2206,7 +2217,7 @@ _filters:
     matchOptions: Modifier la sensibilité à la casse et/ou activer la correspondance
       exacte avec une suite de caractères
     info: Nomenclature
-    info2: Un tiret entre crochets [-] indique la possibilité d'inverser/négativer
+    info2: Un tiret entre crochets [-] indique la possibilité d’inverser/négativer
       un filtre avec le caractère tiret -
     infoEnd: Filtrer par aliases
   replyTo: En réponse à
@@ -2254,10 +2265,10 @@ cwStyle: Apparence des «Avertissement de contenu»
 collapseAllCws: Cacher le contenu de toutes les réponses
 searchNotLoggedIn_1: Vous devez être authentifié pour pouvoir utiliser la recherche
   en texte intégral.
-searchNotLoggedIn_2: Toutefois, vous pouvez effectuer des recherches à l'aide de hashtags
+searchNotLoggedIn_2: Toutefois, vous pouvez effectuer des recherches à l’aide de hashtags
   et rechercher des utilisateurs.
-antennaTimelineHint: Les antennes affichent les messages correspondants dans l'ordre
-  dans lequel ils ont été reçus, ce qui n'est pas nécessairement chronologique.
+antennaTimelineHint: Les antennes affichent les messages correspondants dans l’ordre
+  dans lequel ils ont été reçus, ce qui n’est pas nécessairement chronologique.
 alwaysExpandCws: Toujours dérouler les messages avec des avertissements sur le contenu
 hideFromHome: Cacher de la timeline «Principal»
 _wellness:
