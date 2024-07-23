@@ -12,6 +12,7 @@ export async function endedPollNotification(
 	done: any,
 ): Promise<void> {
 	if (job.data == null || Object.keys(job.data).length === 0) {
+		job.opts.removeOnComplete = true;
 		done();
 		return;
 	}

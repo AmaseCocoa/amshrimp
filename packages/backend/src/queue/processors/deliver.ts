@@ -20,7 +20,10 @@ const logger = new Logger("deliver");
 let latest: string | null = null;
 
 export default async (job: Bull.Job<DeliverJobData>) => {
-	if (job.data == null || Object.keys(job.data).length === 0) return "Skip (data was null or empty)";
+	if (job.data == null || Object.keys(job.data).length === 0) {
+		job.opts.removeOnComplete = true;
+		return "Skip (data was null or empty)";
+	}
 	const { host } = new URL(job.data.to);
 	const puny = toPuny(host);
 

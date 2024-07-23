@@ -28,7 +28,10 @@ const logger = new Logger("inbox");
 
 // Processing when an activity arrives in the user's inbox
 export default async (job: Bull.Job<InboxJobData>): Promise<string> => {
-	if (job.data == null || Object.keys(job.data).length === 0) return "Skip (data was null or empty)";
+	if (job.data == null || Object.keys(job.data).length === 0) {
+		job.opts.removeOnComplete = true;
+		return "Skip (data was null or empty)";
+	}
 	const signature = job.data.signature; // HTTP-signature
 	let activity = job.data.activity;
 

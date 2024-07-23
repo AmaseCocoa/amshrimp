@@ -9,7 +9,10 @@ import config from "@/config/index.js";
 const logger = new Logger("webhook");
 
 export default async (job: Bull.Job<WebhookDeliverJobData>) => {
-	if (job.data == null || Object.keys(job.data).length === 0) return "Skip (data was null or empty)";
+	if (job.data == null || Object.keys(job.data).length === 0) {
+		job.opts.removeOnComplete = true;
+		return "Skip (data was null or empty)";
+	}
 	try {
 		logger.debug(`delivering ${job.data.webhookId}`);
 
