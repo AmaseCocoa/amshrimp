@@ -6,6 +6,7 @@ import { checkExpiredMutings } from "./check-expired-mutings.js";
 import { clean } from "./clean.js";
 import { setLocalEmojiSizes } from "./local-emoji-size.js";
 import { verifyLinks } from "./verify-links.js";
+import { noop } from "@/queue/processors/noop.js";
 
 const jobs = {
 	tickCharts,
@@ -25,4 +26,6 @@ export default function (dbQueue: Bull.Queue<Record<string, unknown>>) {
 	for (const [k, v] of Object.entries(jobs)) {
 		dbQueue.process(k, v);
 	}
+
+	dbQueue.process(noop);
 }

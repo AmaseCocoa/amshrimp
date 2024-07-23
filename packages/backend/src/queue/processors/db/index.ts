@@ -16,6 +16,7 @@ import { importMastoPost } from "./import-masto-post.js";
 import { importCkPost } from "./import-firefish-post.js";
 import { importBlocking } from "./import-blocking.js";
 import { importCustomEmojis } from "./import-custom-emojis.js";
+import { noop } from "@/queue/processors/noop.js";
 
 const jobs = {
 	deleteDriveFiles,
@@ -44,4 +45,6 @@ export default function (dbQueue: Bull.Queue<DbJobData>) {
 	for (const [k, v] of Object.entries(jobs)) {
 		dbQueue.process(k, v);
 	}
+
+	dbQueue.process(noop);
 }

@@ -11,6 +11,10 @@ export async function endedPollNotification(
 	job: Bull.Job<EndedPollNotificationJobData>,
 	done: any,
 ): Promise<void> {
+	if (job.data == null || Object.keys(job.data).length === 0) {
+		done();
+		return;
+	}
 	const note = await Notes.findOneBy({ id: job.data.noteId });
 	if (note == null || !note.hasPoll) {
 		done();
