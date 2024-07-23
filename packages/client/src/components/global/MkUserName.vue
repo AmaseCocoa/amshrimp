@@ -10,7 +10,7 @@
 
 <script lang="ts" setup>
 import {} from "vue";
-import type * as misskey from "iceshrimp-js";
+import type * as misskey from "iceshrimp-sdk";
 
 const props = withDefaults(
 	defineProps<{

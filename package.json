@@ -7,9 +7,9 @@
 	},
 	"private": true,
 	"scripts": {
-		"rebuild": "clean && node ./scripts/build-greet.js && yarn workspace iceshrimp-js build &&  yarn workspaces foreach -Apitv run build && gulp",
-		"build": "node ./scripts/build-greet.js && yarn workspace iceshrimp-js run build && yarn workspaces foreach -Apitv run build && gulp",
-		"build:debug": "node ./scripts/build-greet.js && yarn workspace iceshrimp-js run build:debug && yarn workspaces foreach -Apitv run build:debug && gulp",
+		"rebuild": "clean && node ./scripts/build-greet.js && yarn workspace iceshrimp-sdk build &&  yarn workspaces foreach -Apitv run build && gulp",
+		"build": "node ./scripts/build-greet.js && yarn workspace iceshrimp-sdk run build && yarn workspaces foreach -Apitv run build && gulp",
+		"build:debug": "node ./scripts/build-greet.js && yarn workspace iceshrimp-sdk run build:debug && yarn workspaces foreach -Apitv run build:debug && gulp",
 		"start": "yarn workspace backend run start",
 		"start:debug": "yarn workspace backend run start:debug",
 		"start:test": "yarn workspace backend run start:test",
@@ -39,7 +39,7 @@
 		"packages/backend",
 		"packages/client",
 		"packages/sw",
-		"packages/iceshrimp-js"
+		"packages/iceshrimp-sdk"
 	],
 	"resolutions": {
 		"chokidar": "^3.3.1"
@@ -74,6 +74,18 @@
 	"packageManager": "yarn@4.3.1",
 	"dependenciesMeta": {
 		"@discordapp/twemoji@14.1.2": {
+			"unplugged": true
+		},
+		"@microsoft/api-documenter@7.22.30": {
+			"unplugged": true
+		},
+		"@microsoft/api-extractor@7.36.3": {
+			"unplugged": true
+		},
+		"@microsoft/api-extractor-model@7.27.5": {
+			"unplugged": true
+		},
+		"eventemitter3@4.0.7": {
 			"unplugged": true
 		}
 	}

@@ -29,11 +29,11 @@ const { join } = require("node:path");
 		recursive: true,
 		force: true,
 	});
-	fs.rmSync(join(__dirname, "/../packages/iceshrimp-js/built"), {
+	fs.rmSync(join(__dirname, "/../packages/iceshrimp-sdk/built"), {
 		recursive: true,
 		force: true,
 	});
-	fs.rmSync(join(__dirname, "/../packages/iceshrimp-js/node_modules"), {
+	fs.rmSync(join(__dirname, "/../packages/iceshrimp-sdk/node_modules"), {
 		recursive: true,
 		force: true,
 	});

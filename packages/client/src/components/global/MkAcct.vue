@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts" setup>
-import type * as misskey from "iceshrimp-js";
+import type * as misskey from "iceshrimp-sdk";
 import { toUnicode } from "punycode/";
 import { host as hostRaw } from "@/config";
 

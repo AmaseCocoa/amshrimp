@@ -140,7 +140,7 @@ import {
 	ref,
 	watch,
 } from "vue";
-import * as Misskey from "iceshrimp-js";
+import * as Misskey from "iceshrimp-sdk";
 import MkButton from "./MkButton.vue";
 import XNavFolder from "@/components/MkDrive.navFolder.vue";
 import XFolder from "@/components/MkDrive.folder.vue";

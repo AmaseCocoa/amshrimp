@@ -39,7 +39,7 @@
 
 <script lang="ts" setup>
 import { computed, defineComponent, watch } from "vue";
-import * as misskey from "iceshrimp-js";
+import * as misskey from "iceshrimp-sdk";
 import XNoteDetailed from "@/components/MkNoteDetailed.vue";
 import XNotes from "@/components/MkNotes.vue";
 import MkRemoteCaution from "@/components/MkRemoteCaution.vue";

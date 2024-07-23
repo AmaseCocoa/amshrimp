@@ -41,7 +41,7 @@
 
 <script lang="ts" setup>
 import {} from "vue";
-import { notificationTypes } from "iceshrimp-js";
+import { notificationTypes } from "iceshrimp-sdk";
 import MkSwitch from "./form/switch.vue";
 import MkInfo from "./MkInfo.vue";
 import MkButton from "./MkButton.vue";

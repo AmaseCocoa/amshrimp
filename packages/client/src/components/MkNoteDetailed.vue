@@ -164,7 +164,7 @@ import {
 	reactive,
 	ref,
 } from "vue";
-import * as misskey from "iceshrimp-js";
+import * as misskey from "iceshrimp-sdk";
 import MkTab from "@/components/MkTab.vue";
 import MkNote from "@/components/MkNote.vue";
 import MkNoteSub from "@/components/MkNoteSub.vue";
@@ -185,7 +185,7 @@ import { getNoteMenu } from "@/scripts/get-note-menu";
 import { useNoteCapture } from "@/scripts/use-note-capture";
 import { deepClone } from "@/scripts/clone";
 import { stream } from "@/stream";
-import { NoteUpdatedEvent } from "iceshrimp-js/src/streaming.types";
+import { NoteUpdatedEvent } from "iceshrimp-sdk/src/streaming.types";
 import appear from "@/directives/appear";
 
 const props = defineProps<{

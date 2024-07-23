@@ -4,7 +4,7 @@ import MkInput from "@/components/form/input.vue";
 import * as os from "@/os.js";
 import XSearchFilterDialog from "@/components/MkSearchFilterDialog.vue";
 import { onActivated, onMounted, onUnmounted, ref, toRefs } from "vue";
-import * as Acct from "iceshrimp-js/built/acct";
+import * as Acct from "iceshrimp-sdk/built/acct";
 
 const props = defineProps<{
 	query: string;

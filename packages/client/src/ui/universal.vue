@@ -167,7 +167,7 @@
 
 <script lang="ts" setup>
 import { computed, defineAsyncComponent, onMounted, provide, ref } from "vue";
-import * as Acct from "iceshrimp-js/built/acct";
+import * as Acct from "iceshrimp-sdk/built/acct";
 import type { ComputedRef } from "vue";
 import XCommon from "./_common_/common.vue";
 import type { PageMetadata } from "@/scripts/page-metadata";

@@ -340,7 +340,7 @@
 import { watch } from "vue";
 import { Virtual } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/vue";
-import type * as iceshrimp from "iceshrimp-js";
+import type * as iceshrimp from "iceshrimp-sdk";
 import MkChart from "@/components/MkChart.vue";
 import MkObjectView from "@/components/MkObjectView.vue";
 import FormLink from "@/components/form/link.vue";

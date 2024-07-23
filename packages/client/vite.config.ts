@@ -90,7 +90,7 @@ export default defineConfig(({ command, mode }) => {
 			sourcemap: process.env.NODE_ENV === "development" || process.env.VUE_ENV === "development",
 			reportCompressedSize: false,
 			commonjsOptions: {
-				include: [/iceshrimp-js/, /node_modules/],
+				include: [/iceshrimp-sdk/, /node_modules/],
 			},
 		},
 		optimizeDeps: {

@@ -54,7 +54,7 @@ import {
 	computed,
 	ref,
 } from "vue";
-import { notificationTypes } from "iceshrimp-js";
+import { notificationTypes } from "iceshrimp-sdk";
 import MkPagination, { Paging } from "@/components/MkPagination.vue";
 import XNotification from "@/components/MkNotification.vue";
 import XList from "@/components/MkDateSeparatedList.vue";

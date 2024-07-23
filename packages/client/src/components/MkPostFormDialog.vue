@@ -20,7 +20,7 @@
 
 <script lang="ts" setup>
 import {} from "vue";
-import * as misskey from "iceshrimp-js";
+import * as misskey from "iceshrimp-sdk";
 import MkModal from "@/components/MkModal.vue";
 import MkPostForm from "@/components/MkPostForm.vue";
 

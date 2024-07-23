@@ -1,5 +1,5 @@
 import { reactive, ref } from "vue";
-import * as Misskey from "iceshrimp-js";
+import * as Misskey from "iceshrimp-sdk";
 import { readAndCompressImage } from "browser-image-resizer";
 import { defaultStore } from "@/store";
 import { apiUrl } from "@/config";

@@ -59,7 +59,7 @@ import * as os from "@/os";
 import { i18n } from "@/i18n";
 import { definePageMetadata } from "@/scripts/page-metadata";
 import { $i } from "@/account";
-import { toString } from "iceshrimp-js/built/acct";
+import { toString } from "iceshrimp-sdk/built/acct";
 import { unique } from "@/scripts/array.js";
 
 let moveToAccount = $ref("");

@@ -1,6 +1,6 @@
 import { throttle } from "throttle-debounce";
 import { markRaw } from "vue";
-import { notificationTypes } from "iceshrimp-js";
+import { notificationTypes } from "iceshrimp-sdk";
 import { Storage } from "../../pizzax";
 import { i18n } from "@/i18n";
 import { api } from "@/os";

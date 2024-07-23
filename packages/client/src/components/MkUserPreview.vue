@@ -30,8 +30,8 @@
 <script lang="ts" setup>
 import { onMounted } from "vue";
 import MkUserInfo from "@/components/MkUserInfo.vue";
-import * as Acct from "iceshrimp-js/built/acct";
-import type * as misskey from "iceshrimp-js";
+import * as Acct from "iceshrimp-sdk/built/acct";
+import type * as misskey from "iceshrimp-sdk";
 import * as os from "@/os";
 
 const props = defineProps<{

@@ -12,7 +12,7 @@
 
 <script lang="ts" setup>
 import {} from "vue";
-import * as misskey from "iceshrimp-js";
+import * as misskey from "iceshrimp-sdk";
 import XNoteHeader from "@/components/MkNoteHeader.vue";
 import MkSubNoteContent from "@/components/MkSubNoteContent.vue";
 

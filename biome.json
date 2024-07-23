@@ -8,7 +8,7 @@
   },
 	"formatter": {
 		"ignore": [
-			"packages/iceshrimp-js/api-extractor.json",
+			"packages/iceshrimp-sdk/api-extractor.json",
 			"packages/*/tsconfig.json",
 			"packages/*/built",
 			"packages/*/package-lock.json",

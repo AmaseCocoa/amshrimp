@@ -24,8 +24,8 @@ import {
 	onUnmounted,
 	watch,
 } from "vue";
-import * as Acct from "iceshrimp-js/built/acct";
-import * as misskey from "iceshrimp-js";
+import * as Acct from "iceshrimp-sdk/built/acct";
+import * as misskey from "iceshrimp-sdk";
 import XFollowList from "./follow-list.vue";
 import * as os from "@/os";
 import { definePageMetadata } from "@/scripts/page-metadata";

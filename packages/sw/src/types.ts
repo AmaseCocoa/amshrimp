@@ -1,4 +1,4 @@
-import * as Misskey from "iceshrimp-js";
+import * as Misskey from "iceshrimp-sdk";
 
 export type SwMessageOrderType = "post" | "push";
 

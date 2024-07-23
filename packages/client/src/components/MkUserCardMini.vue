@@ -24,7 +24,7 @@
 </template>
 
 <script lang="ts" setup>
-import * as misskey from "iceshrimp-js";
+import * as misskey from "iceshrimp-sdk";
 import MkMiniChart from "@/components/MkMiniChart.vue";
 import * as os from "@/os";
 import { acct, userPage } from "@/filters/user";

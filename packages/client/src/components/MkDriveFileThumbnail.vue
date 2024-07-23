@@ -41,7 +41,7 @@
 
 <script lang="ts" setup>
 import { computed } from "vue";
-import type * as Misskey from "iceshrimp-js";
+import type * as Misskey from "iceshrimp-sdk";
 import ImgWithBlurhash from "@/components/MkImgWithBlurhash.vue";
 
 const props = defineProps<{

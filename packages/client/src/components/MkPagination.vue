@@ -72,7 +72,7 @@ import {
 	ref,
 	watch,
 } from "vue";
-import * as misskey from "iceshrimp-js";
+import * as misskey from "iceshrimp-sdk";
 import * as os from "@/os";
 import {
 	onScrollTop,

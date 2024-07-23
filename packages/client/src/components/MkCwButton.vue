@@ -15,7 +15,7 @@
 <script lang="ts" setup>
 import { computed, ref } from "vue";
 import { length } from "stringz";
-import type * as misskey from "iceshrimp-js";
+import type * as misskey from "iceshrimp-sdk";
 import { concat } from "@/scripts/array";
 import { i18n } from "@/i18n";
 import {defaultStore} from "@/store";
@@ -82,7 +82,7 @@ defineExpose({
 		transition:
 			background 0.2s,
 			color 0.2s;
-		
+
 		> span {
 			font-weight: 500;
 			&::before {

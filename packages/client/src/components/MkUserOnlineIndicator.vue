@@ -4,7 +4,7 @@
 
 <script lang="ts" setup>
 import {} from "vue";
-import * as misskey from "iceshrimp-js";
+import * as misskey from "iceshrimp-sdk";
 import { i18n } from "@/i18n";
 
 const props = defineProps<{

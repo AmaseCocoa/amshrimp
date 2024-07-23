@@ -202,7 +202,7 @@
 
 <script lang="ts" setup>
 import { computed, ref } from "vue";
-import * as misskey from "iceshrimp-js";
+import * as misskey from "iceshrimp-sdk";
 import * as mfm from "mfm-js";
 import * as os from "@/os";
 import XNoteSimple from "@/components/MkNoteSimple.vue";

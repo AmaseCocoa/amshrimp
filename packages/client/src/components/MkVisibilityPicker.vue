@@ -7,8 +7,8 @@
 		@click="modal.close()"
 		@closed="emit('closed')"
 	>
-		<div 
-			class="_popup" 
+		<div
+			class="_popup"
 			:class="{ [$style.root]: true, [$style.asDrawer]: type === 'drawer' }">
 			<button
 				key="public"
@@ -126,7 +126,7 @@
 
 <script lang="ts" setup>
 import { nextTick, watch } from "vue";
-import * as misskey from "iceshrimp-js";
+import * as misskey from "iceshrimp-sdk";
 import MkModal from "@/components/MkModal.vue";
 import { i18n } from "@/i18n";
 

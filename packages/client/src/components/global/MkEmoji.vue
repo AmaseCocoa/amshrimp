@@ -24,7 +24,7 @@
 
 <script lang="ts" setup>
 import { computed, ref, watch } from "vue";
-import type { CustomEmoji } from "iceshrimp-js/built/entities";
+import type { CustomEmoji } from "iceshrimp-sdk/built/entities";
 import { getStaticImageUrl } from "@/scripts/get-static-image-url";
 import { char2filePath } from "@/scripts/twemoji-base";
 import { defaultStore } from "@/store";

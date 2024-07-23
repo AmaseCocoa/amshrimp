@@ -15,7 +15,7 @@
 
 <script lang="ts" setup>
 import { computed } from "vue";
-import * as misskey from "iceshrimp-js";
+import * as misskey from "iceshrimp-sdk";
 import MkGalleryPostPreview from "@/components/MkGalleryPostPreview.vue";
 import MkPagination from "@/components/MkPagination.vue";
 

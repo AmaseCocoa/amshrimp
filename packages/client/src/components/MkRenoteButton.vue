@@ -22,7 +22,7 @@
 
 <script lang="ts" setup>
 import { computed, ref } from "vue";
-import type * as misskey from "iceshrimp-js";
+import type * as misskey from "iceshrimp-sdk";
 import Ripple from "@/components/MkRipple.vue";
 import XDetails from "@/components/MkUsersTooltip.vue";
 import { pleaseLogin } from "@/scripts/please-login";

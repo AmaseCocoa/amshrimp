@@ -29,7 +29,7 @@
 
 <script lang="ts" setup>
 import { onMounted } from "vue";
-import * as misskey from "iceshrimp-js";
+import * as misskey from "iceshrimp-sdk";
 import { getStaticImageUrl } from "@/scripts/get-static-image-url";
 import { notePage } from "@/filters/note";
 import * as os from "@/os";

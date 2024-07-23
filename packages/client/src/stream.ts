@@ -1,4 +1,4 @@
-import * as Misskey from "iceshrimp-js";
+import * as Misskey from "iceshrimp-sdk";
 import { markRaw } from "vue";
 import { $i } from "@/account";
 import { url } from "@/config";
