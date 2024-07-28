@@ -1190,9 +1190,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iceshrimp/summaly@npm:2.7.1":
-  version: 2.7.1
-  resolution: "@iceshrimp/summaly@npm:2.7.1::__archiveUrl=https%3A%2F%2Ficeshrimp.dev%2Fapi%2Fpackages%2Ficeshrimp%2Fnpm%2F%2540iceshrimp%252Fsummaly%2F-%2F2.7.1%2Fsummaly-2.7.1.tgz"
+"@iceshrimp/summaly@npm:2.7.2":
+  version: 2.7.2
+  resolution: "@iceshrimp/summaly@npm:2.7.2::__archiveUrl=https%3A%2F%2Ficeshrimp.dev%2Fapi%2Fpackages%2Ficeshrimp%2Fnpm%2F%2540iceshrimp%252Fsummaly%2F-%2F2.7.2%2Fsummaly-2.7.2.tgz"
   dependencies:
     cheerio: "npm:0.22.0"
     debug: "npm:4.3.3"
@@ -1204,8 +1204,7 @@ __metadata:
     koa: "npm:2.13.4"
     private-ip: "npm:2.3.3"
     require-all: "npm:3.0.0"
-    trace-redirect: "npm:1.0.6"
-  checksum: 10/de3ffcd39e29f6ee745ead391a4688faf54bc81e476c4f712aba985e32d6e4a35f66e4fba9c8e0648a67dac360eb2dc1fc387bf70fadac19c025f39bfb502034
+  checksum: 10/242d99402331ee368222f8afe2b789d0a0eb3976fa1fe6cb2e887dd679fe53c282c559cf4c63946b78336ab3e9acc05131461d111dbb1318015dee702fe70aa8
   languageName: node
   linkType: hard
 
@@ -5450,7 +5449,7 @@ __metadata:
     "@bull-board/koa": "npm:5.6.0"
     "@bull-board/ui": "npm:5.6.0"
     "@discordapp/twemoji": "npm:14.1.2"
-    "@iceshrimp/summaly": "npm:2.7.1"
+    "@iceshrimp/summaly": "npm:2.7.2"
     "@koa/cors": "npm:3.4.3"
     "@koa/multer": "npm:3.0.2"
     "@koa/router": "npm:9.0.1"
@@ -19980,13 +19979,6 @@ __metadata:
   version: 0.0.3
   resolution: "tr46@npm:0.0.3"
   checksum: 10/8f1f5aa6cb232f9e1bdc86f485f916b7aa38caee8a778b378ffec0b70d9307873f253f5cbadbe2955ece2ac5c83d0dc14a77513166ccd0a0c7fe197e21396695
-  languageName: node
-  linkType: hard
-
-"trace-redirect@npm:1.0.6":
-  version: 1.0.6
-  resolution: "trace-redirect@npm:1.0.6"
-  checksum: 10/20429f8ed301caa17d826b028055a3b63ad4ca87183098904440c7e674ba5b66224c0a68ab10b3c10c55730163b39659e3024d2e713a6c85c11edbdb892a2cde
   languageName: node
   linkType: hard
 
