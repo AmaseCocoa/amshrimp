@@ -81,6 +81,7 @@ export default define(meta, paramDef, async (ps, user) => {
 			},
 			body: JSON.stringify(jsonBody),
 			agent: getAgentByUrl,
+			size: 10 * 1024 * 1024
 		});
 
 		const json = (await res.json()) as {
@@ -114,6 +115,7 @@ export default define(meta, paramDef, async (ps, user) => {
 			Accept: "application/json, */*",
 		},
 		body: params,
+		size: 10 * 1024 * 1024,
 		// TODO
 		//timeout: 10000,
 		agent: getAgentByUrl,

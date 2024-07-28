@@ -85,6 +85,7 @@ export const request = async (
 		headers: {
 			"Content-Type": "application/json",
 		},
+		size: 10 * 1024 * 1024,
 		body: JSON.stringify(Object.assign(auth, params)),
 	});
 

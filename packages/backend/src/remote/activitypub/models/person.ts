@@ -56,6 +56,8 @@ import {
 import { RecursionLimiter } from "@/models/repositories/user-profile.js";
 import { UserConverter } from "@/server/api/mastodon/converters/user.js";
 
+import fetch from "node-fetch";
+
 const logger = apLogger;
 
 const nameLength = 128;
@@ -271,6 +273,7 @@ export async function createPerson(
 		try {
 			let data = await fetch(person.followers, {
 				headers: { Accept: "application/json" },
+				size: 1024 * 1024
 			});
 			let json_data = JSON.parse(await data.text());
 
@@ -286,6 +289,7 @@ export async function createPerson(
 		try {
 			let data = await fetch(person.following, {
 				headers: { Accept: "application/json" },
+				size: 1024 * 1024
 			});
 			let json_data = JSON.parse(await data.text());
 
@@ -529,6 +533,7 @@ export async function updatePerson(
 		try {
 			let data = await fetch(person.followers, {
 				headers: { Accept: "application/json" },
+				size: 1024 * 1024
 			});
 			let json_data = JSON.parse(await data.text());
 
@@ -544,6 +549,7 @@ export async function updatePerson(
 		try {
 			let data = await fetch(person.following, {
 				headers: { Accept: "application/json" },
+				size: 1024 * 1024
 			});
 			let json_data = JSON.parse(await data.text());
 
