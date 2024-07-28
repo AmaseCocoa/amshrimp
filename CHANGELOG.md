@@ -1,3 +1,24 @@
+## v2023.12.9
+This release contains a security patch, as well as minor fixes and improvements. Upgrading is strongly recommended for all server operators.
+
+### Highlights
+- Several DoS vulnerabilities - allowing remote attackers to allocate arbitrary amounts of memory - were patched
+- Corrupt jobs now get discarded instead of clogging up the failed queues
+
+### Backend
+- Fetched JSON-LD contexts are now limited to 1MiB, resolving a DoS attack vector
+- Fetched node-fetch responses are now limited to 1MiB/10MiB, resolving a DoS attack vector
+
+### Miscellaneous
+- The docker images now use the bundled libvips version shipping with sharp instead of the system-wide one, reducing the image size by ~60MB
+- The example docker-compose.yml file was updated
+- The iceshrimp-js package was renamed to iceshrimp-sdk in order to prevent confusion should this repository be renamed to iceshrimp-js in the future (to distinguish it from Iceshrimp.NET)
+- Various dependency updates
+- Various translation updates
+
+### Attribution
+This release was made possible by project contributors: AntoineÐ & Laura Hausmann
+
 ## v2023.12.8
 This release contains minor fixes and improvements. Upgrading is recommended for all server operators.
 
