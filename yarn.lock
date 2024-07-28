@@ -5569,7 +5569,7 @@ __metadata:
     msgpackr: "npm:1.9.5"
     multer: "npm:1.4.4-lts.1"
     nested-property: "npm:4.0.0"
-    node-fetch: "npm:3.3.1"
+    node-fetch: "npm:3.3.2"
     nodemailer: "npm:6.9.3"
     oauth: "npm:^0.10.0"
     os-utils: "npm:0.0.14"
@@ -15180,7 +15180,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:*, node-fetch@npm:^3.2.10":
+"node-fetch@npm:*, node-fetch@npm:3.3.2, node-fetch@npm:^3.2.10":
   version: 3.3.2
   resolution: "node-fetch@npm:3.3.2"
   dependencies:
@@ -15188,17 +15188,6 @@ __metadata:
     fetch-blob: "npm:^3.1.4"
     formdata-polyfill: "npm:^4.0.10"
   checksum: 10/24207ca8c81231c7c59151840e3fded461d67a31cf3e3b3968e12201a42f89ce4a0b5fb7079b1fa0a4655957b1ca9257553200f03a9f668b45ebad265ca5593d
-  languageName: node
-  linkType: hard
-
-"node-fetch@npm:3.3.1":
-  version: 3.3.1
-  resolution: "node-fetch@npm:3.3.1"
-  dependencies:
-    data-uri-to-buffer: "npm:^4.0.0"
-    fetch-blob: "npm:^3.1.4"
-    formdata-polyfill: "npm:^4.0.10"
-  checksum: 10/9fed9ed9ab83f719ffbe51b5029f32ee9820a725afc57a3e6a7e5742a05dd38b22d005f2d03d70e8e0924b497e513b08992843bb1bc7f0a15b72ad071d8c1271
   languageName: node
   linkType: hard
 

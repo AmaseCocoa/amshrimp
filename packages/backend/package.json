@@ -93,7 +93,7 @@
 		"msgpackr": "1.9.5",
 		"multer": "1.4.4-lts.1",
 		"nested-property": "4.0.0",
-		"node-fetch": "3.3.1",
+		"node-fetch": "3.3.2",
 		"nodemailer": "6.9.3",
 		"oauth": "^0.10.0",
 		"os-utils": "0.0.14",

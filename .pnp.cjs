@@ -7260,7 +7260,7 @@ const RAW_RUNTIME_STATE =
           ["msgpackr", "npm:1.9.5"],\
           ["multer", "npm:1.4.4-lts.1"],\
           ["nested-property", "npm:4.0.0"],\
-          ["node-fetch", "npm:3.3.1"],\
+          ["node-fetch", "npm:3.3.2"],\
           ["nodemailer", "npm:6.9.3"],\
           ["oauth", "npm:0.10.0"],\
           ["os-utils", "npm:0.0.14"],\
@@ -18326,16 +18326,6 @@ const RAW_RUNTIME_STATE =
           ["node-fetch", "npm:2.6.12"]\
         ],\
         "linkType": "SOFT"\
-      }],\
-      ["npm:3.3.1", {\
-        "packageLocation": "./.yarn/cache/node-fetch-npm-3.3.1-576511fc5a-9fed9ed9ab.zip/node_modules/node-fetch/",\
-        "packageDependencies": [\
-          ["node-fetch", "npm:3.3.1"],\
-          ["data-uri-to-buffer", "npm:4.0.1"],\
-          ["fetch-blob", "npm:3.2.0"],\
-          ["formdata-polyfill", "npm:4.0.10"]\
-        ],\
-        "linkType": "HARD"\
       }],\
       ["npm:3.3.2", {\
         "packageLocation": "./.yarn/cache/node-fetch-npm-3.3.2-5267e015f2-24207ca8c8.zip/node_modules/node-fetch/",\
