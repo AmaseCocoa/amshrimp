@@ -122,11 +122,12 @@ export class LdSignature {
 	}
 
 	private async fetchDocument(url: string) {
-		const json = await fetch(url, {
+		const ctrl = new AbortController();
+		return await fetch(url, {
 			headers: {
 				Accept: "application/ld+json, application/json",
 			},
-			size: 1024 * 1024, // 1MiB
+			signal: ctrl.signal,
 			// TODO
 			//timeout: this.loderTimeout,
 			agent: (u) => (u.protocol === "http:" ? httpAgent : httpsAgent),
@@ -134,11 +135,12 @@ export class LdSignature {
 			if (!res.ok) {
 				throw new Error(`${res.status} ${res.statusText}`);
 			} else {
-				return res.json();
+				if (res.size < 1024 * 1024) // 1MiB
+					return res.json();
+				ctrl.abort();
+				throw new Error('Size exceeded 1MiB');
 			}
 		});
-
-		return json;
 	}
 
 	public sha256(data: string): string {
