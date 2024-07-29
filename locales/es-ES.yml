@@ -1178,6 +1178,17 @@ _mfm:
   foregroundDescription: Cambia el color de frente del texto.
   background: Color de fondo
   backgroundDescription: Cambia el color de fondo del texto.
+  borderDescription: Añade un borde alrededor del contenido.
+  rubyDescription: Añade una pequeña anotación encima del texto, usualmente usado
+    para mostrar pronunciaciones de caracteres asiáticos.
+  border: Borde
+  ruby: Rubí
+  unixtime: Tiempo Unix
+  unixtimeDescription: Convierte un número de segundos desde el 1 de Enero de 1970
+    a una fecha entendible.
+  followmouse: Seguir el ratón
+  followmouseDescription: Hacer que el contenido siga al cursor del ratón.
+  followmouseToggle: Vista previa
 _instanceTicker:
   none: "No mostrar nunca"
   remote: "Mostrar a usuarios remotos"
