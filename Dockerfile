@@ -4,7 +4,7 @@ FROM alpine:3.20 as build
 WORKDIR /iceshrimp
 
 # Install compilation dependencies
-RUN apk add --no-cache --no-progress git alpine-sdk python3 py3-setuptools nodejs-current npm
+RUN apk add --no-cache --no-progress git alpine-sdk python3 py3-setuptools nodejs-current npm linux-headers
 
 # Copy in all files for the build
 COPY . ./
