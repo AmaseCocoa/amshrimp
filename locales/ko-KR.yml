@@ -1,7 +1,8 @@
----
 _lang_: "한국어"
 headlineIceshrimp: "노트로 연결되는 네트워크"
-introIceshrimp: "환영합니다! Iceshrimp 는 오픈 소스 분산형 마이크로 블로그 서비스입니다.\n\"노트\" 를 작성해서, 지금 일어나고 있는 일을 공유하거나, 당신만의 이야기를 모두에게 발신하세요📡\n\"리액션\" 기능으로, 친구의 노트에 총알같이 반응을 추가할 수도 있습니다👍\n새로운 세계를 탐험해 보세요🚀"
+introIceshrimp: "환영합니다! Iceshrimp 는 오픈 소스 분산형 마이크로 블로그 서비스입니다.\n\"노트\" 를 작성해서, 지금
+  일어나고 있는 일을 공유하거나, 당신만의 이야기를 모두에게 발신하세요📡\n\"리액션\" 기능으로, 친구의 노트에 총알같이 반응을 추가할 수도 있습니다👍\n
+  새로운 세계를 탐험해 보세요🚀"
 monthAndDay: "{month}월 {day}일"
 search: "검색"
 notifications: "알림"
@@ -81,7 +82,8 @@ error: "오류"
 somethingHappened: "오류가 발생했습니다"
 retry: "다시 시도"
 pageLoadError: "페이지를 불러오지 못했습니다."
-pageLoadErrorDescription: "네트워크 연결 또는 브라우저 캐시로 인해 발생했을 가능성이 높습니다. 캐시를 삭제하거나, 잠시 후 다시 시도해 주세요."
+pageLoadErrorDescription: "네트워크 연결 또는 브라우저 캐시로 인해 발생했을 가능성이 높습니다. 캐시를 삭제하거나, 잠시 후
+  다시 시도해 주세요."
 serverIsDead: "서버로부터 응답이 없습니다. 잠시 후 다시 시도해주세요."
 youShouldUpgradeClient: "이 페이지를 표시하려면 새로고침하여 새로운 버전의 클라이언트를 이용해 주십시오."
 enterListName: "리스트 이름을 입력"
@@ -137,9 +139,11 @@ emojiUrl: "이모지 URL"
 addEmoji: "이모지 추가"
 settingGuide: "추천 설정"
 cacheRemoteFiles: "리모트 파일을 캐시"
-cacheRemoteFilesDescription: "이 설정을 해지하면 리모트 파일을 캐시하지 않고 해당 파일을 직접 링크하게 됩니다. 그에 따라 서버의 저장 공간을 절약할 수 있지만, 썸네일이 생성되지 않기 때문에 통신량이 증가합니다."
+cacheRemoteFilesDescription: "이 설정을 해지하면 리모트 파일을 캐시하지 않고 해당 파일을 직접 링크하게 됩니다. 그에 따라
+  서버의 저장 공간을 절약할 수 있지만, 썸네일이 생성되지 않기 때문에 통신량이 증가합니다."
 flagAsBot: "나는 봇입니다"
-flagAsBotDescription: "이 계정을 자동화된 수단으로 운용할 경우에 활성화해 주세요. 이 플래그를 활성화하면, 다른 봇이 이를 참고하여 봇 끼리의 무한 연쇄 반응을 회피하거나, 이 계정의 시스템 상에서의 취급이 Bot 운영에 최적화되는 등의 변화가 생깁니다."
+flagAsBotDescription: "이 계정을 자동화된 수단으로 운용할 경우에 활성화해 주세요. 이 플래그를 활성화하면, 다른 봇이 이를 참고하여
+  봇 끼리의 무한 연쇄 반응을 회피하거나, 이 계정의 시스템 상에서의 취급이 Bot 운영에 최적화되는 등의 변화가 생깁니다."
 flagAsCat: "나는 고양이다냥"
 flagAsCatDescription: "이 계정이 고양이라면 활성화 해주세요."
 flagShowTimelineReplies: "타임라인에 노트의 답글을 표시하기"
@@ -156,7 +160,9 @@ searchWith: "검색: {q}"
 youHaveNoLists: "리스트가 없습니다"
 followConfirm: "{name}님을 팔로우 하시겠습니까?"
 proxyAccount: "프록시 계정"
-proxyAccountDescription: "프록시 계정은 특정 조건 하에서 유저의 리모트 팔로우를 대행하는 계정입니다. 예를 들면, 유저가 리모트 유저를 리스트에 넣었을 때, 리스트에 들어간 유저를 아무도 팔로우한 적이 없다면 액티비티가 인스턴스로 배달되지 않기 때문에, 대신 프록시 계정이 해당 유저를 팔로우하도록 합니다."
+proxyAccountDescription: "프록시 계정은 특정 조건 하에서 유저의 리모트 팔로우를 대행하는 계정입니다. 예를 들면, 유저가 리모트
+  유저를 리스트에 넣었을 때, 리스트에 들어간 유저를 아무도 팔로우한 적이 없다면 액티비티가 인스턴스로 배달되지 않기 때문에, 대신 프록시 계정이
+  해당 유저를 팔로우하도록 합니다."
 host: "호스트"
 selectUser: "유저 선택"
 recipient: "수신인"
@@ -190,7 +196,8 @@ clearQueueConfirmText: "대기열에 남아 있는 노트는 더이상 연합되
 clearCachedFiles: "캐시 비우기"
 clearCachedFilesConfirm: "캐시된 리모트 파일을 모두 삭제하시겠습니까?"
 blockedInstances: "차단된 인스턴스"
-blockedInstancesDescription: "차단하려는 인스턴스의 호스트 이름을 줄바꿈으로 구분하여 설정합니다. 차단된 인스턴스는 이 인스턴스와 통신할 수 없게 됩니다."
+blockedInstancesDescription: "차단하려는 인스턴스의 호스트 이름을 줄바꿈으로 구분하여 설정합니다. 차단된 인스턴스는 이 인스턴스와
+  통신할 수 없게 됩니다."
 muteAndBlock: "뮤트 및 차단"
 mutedUsers: "뮤트한 유저"
 blockedUsers: "차단한 유저"
@@ -239,7 +246,8 @@ saved: "저장하였습니다"
 messaging: "대화"
 upload: "업로드"
 keepOriginalUploading: "원본 이미지를 유지"
-keepOriginalUploadingDescription: "이미지를 업로드할 때에 원본을 그대로 유지합니다. 비활성화하면 업로드할 때 브라우저에서 웹 공개용 이미지를 생성합니다."
+keepOriginalUploadingDescription: "이미지를 업로드할 때에 원본을 그대로 유지합니다. 비활성화하면 업로드할 때 브라우저에서
+  웹 공개용 이미지를 생성합니다."
 fromDrive: "드라이브에서"
 fromUrl: "URL로부터"
 uploadFromUrl: "URL 업로드"
@@ -347,7 +355,8 @@ recaptcha: "reCAPTCHA"
 enableRecaptcha: "reCAPTCHA 활성화"
 recaptchaSiteKey: "사이트 키"
 recaptchaSecretKey: "시크릿 키"
-avoidMultiCaptchaConfirm: "여러 Captcha를 사용하는 경우 간섭이 발생할 가능성이 있습니다. 다른 Captcha를 비활성화하시겠습니까? 취소를 눌러 여러 Captcha를 활성화한 상태로 두는 것도 가능합니다."
+avoidMultiCaptchaConfirm: "여러 Captcha를 사용하는 경우 간섭이 발생할 가능성이 있습니다. 다른 Captcha를 비활성화하시겠습니까?
+  취소를 눌러 여러 Captcha를 활성화한 상태로 두는 것도 가능합니다."
 antennas: "안테나"
 manageAntennas: "안테나 관리"
 name: "이름"
@@ -483,15 +492,20 @@ showFeaturedNotesInTimeline: "타임라인에 추천 노트를 표시"
 objectStorage: "오브젝트 스토리지"
 useObjectStorage: "오브젝트 스토리지를 사용"
 objectStorageBaseUrl: "Base URL"
-objectStorageBaseUrlDesc: "오브젝트 (미디어) 참조 URL 을 만들 때 사용되는 URL입니다. CDN 또는 프록시를 사용하는 경우 그 URL을 지정하고, 그 외의 경우 사용할 서비스의 가이드에 따라 공개적으로 액세스 할 수 있는 주소를 지정해 주세요. 예를 들어, AWS S3의 경우 'https://<bucket>.s3.amazonaws.com', GCS등의 경우 'https://storage.googleapis.com/<bucket>' 와 같이 지정합니다."
+objectStorageBaseUrlDesc: "오브젝트 (미디어) 참조 URL 을 만들 때 사용되는 URL입니다. CDN 또는 프록시를 사용하는
+  경우 그 URL을 지정하고, 그 외의 경우 사용할 서비스의 가이드에 따라 공개적으로 액세스 할 수 있는 주소를 지정해 주세요. 예를 들어, AWS
+  S3의 경우 'https://<bucket>.s3.amazonaws.com', GCS등의 경우 'https://storage.googleapis.com/<bucket>'
+  와 같이 지정합니다."
 objectStorageBucket: "Bucket"
 objectStorageBucketDesc: "사용 서비스의 bucket명을 지정해주세요."
 objectStoragePrefix: "Prefix"
 objectStoragePrefixDesc: "이 Prefix 의 디렉토리 아래에 파일이 저장됩니다."
 objectStorageEndpoint: "Endpoint"
-objectStorageEndpointDesc: "AWS S3의 경우 공란, 다른 서비스의 경우 각 서비스의 가이드에 맞게 endpoint를 설정해주세요. '<host>' 혹은 '<host>:<port>' 와 같이 지정합니다."
+objectStorageEndpointDesc: "AWS S3의 경우 공란, 다른 서비스의 경우 각 서비스의 가이드에 맞게 endpoint를 설정해주세요.
+  '<host>' 혹은 '<host>:<port>' 와 같이 지정합니다."
 objectStorageRegion: "Region"
-objectStorageRegionDesc: "'xx-east-1'와 같이 region을 지정해주세요. 사용하는 서비스에 region 개념이 없는 경우, 비워 두거나 'us-east-1'으로 설정해 주세요."
+objectStorageRegionDesc: "'xx-east-1'와 같이 region을 지정해주세요. 사용하는 서비스에 region 개념이 없는
+  경우, 비워 두거나 'us-east-1'으로 설정해 주세요."
 objectStorageUseSSL: "SSL 사용"
 objectStorageUseSSLDesc: "API 호출시 HTTPS 를 사용하지 않는 경우 OFF 로 설정해 주세요"
 objectStorageUseProxy: "연결에 프록시를 사용"
@@ -523,7 +537,8 @@ sort: "정렬"
 ascendingOrder: "오름차순"
 descendingOrder: "내림차순"
 scratchpad: "스크래치 패드"
-scratchpadDescription: "스크래치 패드는 AiScript 의 테스트 환경을 제공합니다. Iceshrimp 와 상호 작용하는 코드를 작성, 실행 및 결과를 확인할 수 있습니다."
+scratchpadDescription: "스크래치 패드는 AiScript 의 테스트 환경을 제공합니다. Iceshrimp 와 상호 작용하는 코드를
+  작성, 실행 및 결과를 확인할 수 있습니다."
 output: "출력"
 script: "스크립트"
 disablePagesScript: "Pages 에서 AiScript 를 사용하지 않음"
@@ -531,11 +546,13 @@ updateRemoteUser: "리모트 유저 정보 갱신"
 deleteAllFiles: "모든 파일 삭제"
 deleteAllFilesConfirm: "모든 파일을 삭제하시겠습니까?"
 removeAllFollowing: "모든 팔로잉 해제"
-removeAllFollowingDescription: "{host}(으)로부터 모든 팔로잉을 해제합니다. 해당 인스턴스가 더 이상 존재하지 않게 된 경우 등에 실행해 주세요."
+removeAllFollowingDescription: "{host}(으)로부터 모든 팔로잉을 해제합니다. 해당 인스턴스가 더 이상 존재하지 않게
+  된 경우 등에 실행해 주세요."
 userSuspended: "이 계정은 정지된 상태입니다."
 userSilenced: "이 계정은 사일런스된 상태입니다."
 yourAccountSuspendedTitle: "계정이 정지되었습니다"
-yourAccountSuspendedDescription: "이 계정은 서버의 이용 약관을 위반하거나, 기타 다른 이유로 인해 정지되었습니다. 자세한 사항은 관리자에게 문의해 주십시오. 계정을 새로 생성하지 마십시오."
+yourAccountSuspendedDescription: "이 계정은 서버의 이용 약관을 위반하거나, 기타 다른 이유로 인해 정지되었습니다. 자세한
+  사항은 관리자에게 문의해 주십시오. 계정을 새로 생성하지 마십시오."
 menu: "메뉴"
 divider: "구분선"
 addItem: "항목 추가"
@@ -614,7 +631,8 @@ useGlobalSetting: "글로벌 설정을 사용하기"
 useGlobalSettingDesc: "활성화하면 계정의 알림 설정이 적용됩니다. 비활성화하면 개별적으로 설정할 수 있게 됩니다."
 other: "기타"
 regenerateLoginToken: "로그인 토큰을 재생성"
-regenerateLoginTokenDescription: "로그인할 때 사용되는 내부 토큰을 재생성합니다. 일반적으로 이 작업을 실행할 필요는 없습니다. 이 기능을 사용하면 이 계정으로 로그인한 모든 기기에서 로그아웃됩니다."
+regenerateLoginTokenDescription: "로그인할 때 사용되는 내부 토큰을 재생성합니다. 일반적으로 이 작업을 실행할 필요는 없습니다.
+  이 기능을 사용하면 이 계정으로 로그인한 모든 기기에서 로그아웃됩니다."
 setMultipleBySeparatingWithSpace: "공백으로 구분하여 여러 개 설정할 수 있습니다."
 fileIdOrUrl: "파일 ID 또는 URL"
 behavior: "동작"
@@ -699,7 +717,8 @@ onlineUsersCount: "{n}명이 접속 중"
 nUsers: "{n} 유저"
 nNotes: "{n} 노트"
 sendErrorReports: "오류 보고서 보내기"
-sendErrorReportsDescription: "이 설정을 활성화하면, 문제가 발생했을 때 오류에 대한 상세 정보를 Iceshrimp에 보내어 더 나은 소프트웨어를 만드는 데에 도움을 줄 수 있습니다."
+sendErrorReportsDescription: "이 설정을 활성화하면, 문제가 발생했을 때 오류에 대한 상세 정보를 Iceshrimp에 보내어
+  더 나은 소프트웨어를 만드는 데에 도움을 줄 수 있습니다."
 myTheme: "내 테마"
 backgroundColor: "배경 색"
 accentColor: "강조 색상"
@@ -780,7 +799,8 @@ emailNotConfiguredWarning: "메일 주소가 설정되어 있지 않습니다."
 ratio: "비율"
 previewNoteText: "본문 미리보기"
 customCss: "CSS 사용자화"
-customCssWarn: "이 설정은 기능을 알고 있는 경우에만 사용해야 합니다. 잘못된 값을 입력하면 클라이언트가 정상적으로 작동하지 않을 수 있습니다."
+customCssWarn: "이 설정은 기능을 알고 있는 경우에만 사용해야 합니다. 잘못된 값을 입력하면 클라이언트가 정상적으로 작동하지 않을 수
+  있습니다."
 global: "글로벌"
 squareAvatars: "프로필 아이콘을 사각형으로 표시"
 sent: "전송"
@@ -795,7 +815,8 @@ whatIsNew: "패치 정보 보기"
 translate: "번역"
 translatedFrom: "{x}에서 번역"
 accountDeletionInProgress: "계정 삭제 작업을 진행하고 있습니다"
-usernameInfo: "서버상에서 계정을 식별하기 위한 이름. 알파벳(a~z, A~Z), 숫자(0~9) 및 언더바(_)를 사용할 수 있습니다. 사용자명은 나중에 변경할 수 없습니다."
+usernameInfo: "서버상에서 계정을 식별하기 위한 이름. 알파벳(a~z, A~Z), 숫자(0~9) 및 언더바(_)를 사용할 수 있습니다.
+  사용자명은 나중에 변경할 수 없습니다."
 aiChanMode: "아이 모드"
 keepCw: "CW 유지하기"
 pubSub: "Pub/Sub 계정"
@@ -883,8 +904,10 @@ cannotUploadBecauseInappropriate: "이 파일은 부적절한 내용을 포함�
 cannotUploadBecauseNoFreeSpace: "드라이브 용량이 부족하여 업로드할 수 없습니다."
 beta: "베타"
 enableAutoSensitive: "자동 NSFW 탐지"
-enableAutoSensitiveDescription: "이용 가능할 경우 기계학습을 통해 자동으로 미디어 NSFW를 설정합니다. 이 기능을 해제하더라도, 인스턴스 정책에 따라 자동으로 설정될 수 있습니다."
-activeEmailValidationDescription: "유저가 입력한 메일 주소가 일회용 메일인지, 실제로 통신할 수 있는 지 엄격하게 검사합니다. 해제할 경우 이메일 형식에 대해서만 검사합니다."
+enableAutoSensitiveDescription: "이용 가능할 경우 기계학습을 통해 자동으로 미디어 NSFW를 설정합니다. 이 기능을 해제하더라도,
+  인스턴스 정책에 따라 자동으로 설정될 수 있습니다."
+activeEmailValidationDescription: "유저가 입력한 메일 주소가 일회용 메일인지, 실제로 통신할 수 있는 지 엄격하게 검사합니다.
+  해제할 경우 이메일 형식에 대해서만 검사합니다."
 navbar: "네비게이션 바"
 shuffle: "셔플"
 account: "계정"
@@ -892,7 +915,8 @@ move: "이동"
 _sensitiveMediaDetection:
   description: "기계학습을 통해 자동으로 민감한 미디어를 탐지하여, 모더레이션에 참고할 수 있도록 합니다. 서버의 부하를 약간 증가시킵니다."
   sensitivity: "탐지 민감도"
-  sensitivityDescription: "민감도가 낮을수록 안전한 미디어가 잘못 탐지될 확률이 줄어들며, 높을수록 민감한 미디어가 탐지되지 않을 확률이 줄어듭니다."
+  sensitivityDescription: "민감도가 낮을수록 안전한 미디어가 잘못 탐지될 확률이 줄어들며, 높을수록 민감한 미디어가 탐지되지
+    않을 확률이 줄어듭니다."
   setSensitiveFlagAutomatically: "자동으로 NSFW로 설정하기"
   setSensitiveFlagAutomaticallyDescription: "이 설정을 해제해도 탐지 결과는 유지됩니다."
   analyzeVideos: "동영상도 같이 확인하기"
@@ -910,7 +934,8 @@ _ffVisibility:
 _signup:
   almostThere: "거의 다 끝났습니다"
   emailAddressInfo: "당신이 사용하고 있는 이메일 주소를 입력해 주세요. 이메일 주소는 다른 유저에게 공개되지 않습니다."
-  emailSent: "입력하신 메일 주소({email})로 확인 메일을 보내드렸습니다. 가입을 완료하시려면 보내드린 메일에 있는 링크로 접속해 주세요."
+  emailSent: "입력하신 메일 주소({email})로 확인 메일을 보내드렸습니다. 가입을 완료하시려면 보내드린 메일에 있는 링크로 접속해
+    주세요."
 _accountDelete:
   accountDelete: "계정 삭제"
   mayTakeTime: "계정 삭제는 서버에 부하를 가하기 때문에, 작성한 콘텐츠나 업로드한 파일의 수가 많으면 완료까지 시간이 걸릴 수 있습니다."
@@ -978,7 +1003,8 @@ _nsfw:
   force: "미디어 항상 숨기기"
 _mfm:
   cheatSheet: "MFM 도움말"
-  intro: "MFM는 Iceshrimp의 다양한 곳에서 사용할 수 있는 전용 마크업 언어입니다. 여기에서는 MFM에서 사용할 수 있는 구문을 확인할 수 있습니다."
+  intro: "MFM는 Iceshrimp의 다양한 곳에서 사용할 수 있는 전용 마크업 언어입니다. 여기에서는 MFM에서 사용할 수 있는 구문을
+    확인할 수 있습니다."
   dummy: "Iceshrimp로 연합우주의 세계가 펼쳐집니다"
   mention: "멘션"
   mentionDescription: "골뱅이표(@) 뒤에 사용자명을 넣어 특정 유저를 나타낼 수 있습니다."
@@ -1185,7 +1211,8 @@ _2fa:
   step2Url: "데스크톱 앱에서는 다음 URL을 입력하세요:"
   step3: "앱에 표시된 토큰을 입력하시면 완료됩니다."
   step4: "다음 로그인부터는 토큰을 입력해야 합니다."
-  securityKeyInfo: "FIDO2를 지원하는 하드웨어 보안 키 혹은 디바이스의 지문인식이나 화면잠금 PIN을 이용해서 로그인하도록 설정할 수 있습니다."
+  securityKeyInfo: "FIDO2를 지원하는 하드웨어 보안 키 혹은 디바이스의 지문인식이나 화면잠금 PIN을 이용해서 로그인하도록 설정할
+    수 있습니다."
 _permissions:
   "read:account": "계정의 정보를 봅니다"
   "write:account": "계정의 정보를 변경합니다"
@@ -1318,7 +1345,8 @@ _profile:
   youCanIncludeHashtags: "해시 태그를 포함할 수 있습니다."
   metadata: "추가 정보"
   metadataEdit: "추가 정보 편집"
-  metadataDescription: "프로필에 추가 정보를 표시할 수 있어요. {rel}과 함께 {a} 태그 또는 {l} 태그를 추가하여 프로필의 링크를 확인할 수 있습니다!"
+  metadataDescription: "프로필에 추가 정보를 표시할 수 있어요. {rel}과 함께 {a} 태그 또는 {l} 태그를 추가하여 프로필의
+    링크를 확인할 수 있습니다!"
   metadataLabel: "라벨"
   metadataContent: "내용"
   changeAvatar: "아바타 이미지 변경"
@@ -1714,3 +1742,101 @@ _deck:
     list: "리스트"
     mentions: "받은 멘션"
     direct: "다이렉트"
+flagSpeakAsCat: 냥체로 대화하기
+older: 이전 노트
+listsDesc: 리스트를 이용하여 지정한 유저를 하나의 타임라인으로 묶을 수 있습니다. 리스트는 타임라인 페이지에서 접근할 수 있습니다.
+removeReaction: 리액션 취소
+enableEmojiReactions: 이모지 리액션 활성화
+flagSpeakAsCatDescription: "'나는 고양이다냥'이 활성화된 상태일 때에 켜면 게시물의 일부 글자가 치환되어 냥냥하게 됩니다"
+expandOnNoteClick: 클릭하여 게시물 자세히 보기
+expandOnNoteClickDesc: 비활성화시에도 우클릭 메뉴 혹은 타임스탬프를 클릭하여 접근할 수 있습니다.
+userSaysSomethingReason: '{name} 님이 {reason}에 대해 말했습니다'
+silencedInstances: 사일런스된 서버
+privateModeInfo: 활성화되면 지정한 서버에만 연합을 허용합니다. 모든 게시물은 공개 타임라인에서 숨겨집니다.
+allowedInstances: 허용된 서버
+silencedInstancesDescription: 사일런스하려는 서버의 호스트 이름을 줄바꿈으로 구분하여 설정합니다. 사일런스 서버의 계정은 모두
+  '사일런스' 상태로 취급되며, 이 서버에서의 팔로우가 모두 승인제로 변경되고, 팔로워가 아닌 유저를 멘션할 수 없게 됩니다. 차단된 서버에는 적용되지
+  않습니다.
+enableRecommendedTimeline: 추천 타임라인 활성화
+antennasDesc: "안테나에서는 지정한 조건에 맞는 게시물을 모아서 볼 수 있습니다.\n 안테나에는 타임라인 페이지에서 접근할 수 있습니다."
+cannotChangeScopeWhenEditing: 노트 편집에서는 공개 범위를 조정할 수 없습니다
+xl: 매우 크게
+userSaysSomethingReasonRenote: '{name} 님이 {reason}에 대한 글을 부스트했습니다'
+clipsDesc: 클립은 분류 및 공유가 가능한 북마크입니다. 각 게시물의 메뉴에서 클립을 생성할 수 있습니다.
+allowedInstancesDescription: 연합을 허용할 서버를 한 줄에 하나씩 적습니다. (비공개 모드에서만 적용)
+seperateRenoteQuote: 부스트와 인용 버튼을 나누기
+pushNotification: 푸시 알림
+subscribePushNotification: 푸시 알림 켜기
+moveTo: 이 계정을 새로운 계정으로 이사
+cannotUploadBecauseExceedsFileSizeLimit: 파일 크기 제한을 초과하여 업로드할 수 없습니다.
+pushNotificationAlreadySubscribed: 푸시 알림이 켜져 있습니다
+sendPushNotificationReadMessageCaption: 짧은 시간동안 "{emptyPushNotificationMessage}" 알림이
+  표시됩니다. 기기의 전력 소모량이 증가할 수 있습니다.
+adminCustomCssWarn: 이 설정에 따른 영향을 이해하고 있는 경우에만 사용하십시오. 올바르지 않은 값을 입력하면 모든 유저의 클라이언트가
+  정상적으로 동작하지 않게 될 수 있습니다. 사용자 CSS 등을 통해 올바르게 작동하는 것을 확인하고 난 후에 적용하십시오.
+customSplashIconsDescription: 유저가 페이지를 불러올 때/새로고침할 때 마다 무작위로 표시할 아이콘 URL을 한 줄에 하나씩
+  적습니다. 이미지는 정적 URL만 허용되며, 되도록 192x192 크기의 이미지를 사용하십시오.
+moveAccountDescription: 이 조작은 취소할 수 없습니다. 우선 이사갈 계정에서 이 계정에 대한 별칭을 생성하였는 지 확인하여 주십시오.
+  그 다음 이사갈 계정을 @person@server.com 형식으로 입력하십시오.
+searchPlaceholder: 연합우주에서 검색
+noThankYou: 괜찮습니다
+addInstance: 서버 추가
+deleted: 삭제됨
+editNote: 노트 편집
+edited: '편집됨: {date} {time}'
+jumpToPrevious: 이전으로 돌아가기
+newer: 새로운 노트
+expandAllCws: 모든 답글의 내용 숨기기를 펼치기
+collapseAllCws: 모든 답글의 내용 숨기기를 접기
+cw: 열람 주의
+showEmojisInReactionNotifications: 리액션 알림에서 이모지 보이기
+renoteMute: 부스트 뮤트
+renoteUnmute: 부스트 뮤트 해제
+selectChannel: 채널 선택
+accountMoved: '이 사용자는 다른 계정으로 이사했습니다:'
+selectInstance: 서버 선택
+silenceThisInstance: 이 서버를 사일런스
+hiddenTags: 숨길 해시태그
+hiddenTagsDescription: 트렌드 및 발견하기에서 숨기려는 해시태그를 (#를 제외하여) 줄바꿈으로 구분하여 설정합니다. 트렌드 및 발견하기
+  외의 방법으로는 계속해서 탐색할 수 있습니다.
+noInstances: 서버가 없습니다
+silenced: 사일런스됨
+manageGroups: 그룹 관리
+antennaInstancesDescription: 서버를 한 줄에 하나씩 적습니다
+unsubscribePushNotification: 푸시 알림 끄기
+pushNotificationNotSupported: 브라우저 혹은 서버가 푸시 알림을 지원하지 않습니다
+sendPushNotificationReadMessage: 알림 및 메시지를 읽었을 때 푸시 알림을 삭제
+showAds: 광고 보이기
+enterSendsMessage: 대화에서 Return 키를 눌러 메시지를 보냅니다 (비활성화 시 Ctrl + Return 으로 보냅니다)
+customMOTD: 커스텀 MOTD (스플래시 화면 메시지)
+customMOTDDescription: 유저가 페이지를 불러올 때/새로고침할 때 마다 무작위로 표시할 메시지를 한 줄에 하나씩 적습니다.
+customSplashIcons: 스플래시 화면 사용자 지정 아이콘 URL
+showUpdates: Iceshrimp 업데이트마다 팝업을 표시하기
+recommendedInstances: 추천 서버
+recommendedInstancesDescription: 추천 타임라인에 표시할 서버를 한 줄에 하나씩 입력하십시오.
+caption: 자동 미디어 설명
+splash: 스플래시 화면
+updateAvailable: 새로운 업데이트가 있습니다!
+swipeOnMobile: 페이지 간 스와이프를 활성화
+swipeOnDesktop: 데스크톱 환경에서 모바일 스타일의 스와이프 활성화
+logoImageUrl: 로고 URL
+showAdminUpdates: 새로운 Iceshrimp 버전이 있을 때 알리기 (관리자 전용)
+replayTutorial: 튜토리얼 다시 보기
+moveToLabel: '이사갈 계정:'
+moveAccount: 이사하기!
+migration: 계정 이동
+image: 이미지
+video: 비디오
+audio: 오디오
+statusbar: 스테이터스 바
+antennaTimelineHint: 노트는 안테나의 조건을 검사하는 시점에 추가됩니다. 따라서 반드시 시간 순서로 표시되지 않을 수 있습니다.
+accessibility: 접근성
+userSaysSomethingReasonReply: '{name} 님이 {reason}에 대한 글에 답글을 보냈습니다'
+userSaysSomethingReasonQuote: '{name} 님이 {reason}에 대한 글을 인용했습니다'
+channelFederationWarn: 채널은 현재 다른 서버와 연합되지 않습니다
+secureMode: 보안 모드 (Authorized Fetch)
+instanceSecurity: 서버 보안
+secureModeInfo: 인증 정보가 없는 리모트 서버로부터의 요청에 응답하지 않습니다.
+privateMode: 비공개 모드
+alt: 설명
+breakFollowConfirm: 팔로워를 해제하시겠습니까?
