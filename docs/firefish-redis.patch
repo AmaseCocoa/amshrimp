@@ -1,7 +1,7 @@
-diff --git a/packages/backend/built/services/chart/core.js b/packages/backend/built/services/chart/core.js.patched
+diff --git a/packages/backend/built/services/chart/core.js b/packages/backend/built/services/chart/core.js
 index 000b2f7..33d4031 100644
 --- a/packages/backend/built/services/chart/core.js
-+++ b/packages/backend/built/services/chart/core.js.patched
++++ b/packages/backend/built/services/chart/core.js
 @@ -3,7 +3,6 @@
   *
   * Tests located in test/chart
@@ -18,10 +18,10 @@ index 000b2f7..33d4031 100644
          const lock = await getChartInsertLock(lockKey);
          try {
              // ロック内でもう1回チェックする
-diff --git a/packages/backend/built/db/postgre.js b/packages/backend/built/db/postgre.js.patched
+diff --git a/packages/backend/built/db/postgre.js b/packages/backend/built/db/postgre.js
 index 81d6238..a133c02 100644
 --- a/packages/backend/built/db/postgre.js
-+++ b/packages/backend/built/db/postgre.js.patched
++++ b/packages/backend/built/db/postgre.js
 @@ -71,7 +71,6 @@ import { User } from "../models/entities/user.js";
  import { Webhook } from "../models/entities/webhook.js";
  import { entities as charts } from "../services/chart/entities.js";
