@@ -1,56 +1,58 @@
-# 🚚 Migrating from Misskey/FoundKey/Firefish to Iceshrimp
+# 🚚 Migrating from Firefish to Iceshrimp
 
-All the guides below assume you're starting in the root of the repo directory.
+Before proceeding, please **ensure you have an up-to-date backup of the database.**
 
-### Before proceeding
+## Preparations
+First, follow Firefish's [downgrade guide](https://firefish.dev/firefish/firefish/-/blob/downgrade/docs/downgrade.md) to get back to v1.0.5-rc.
 
-- **Ensure you have stopped all master and worker processes of Misskey.**
-- **Ensure you have backups of the database before performing any commands.**
+### Docker
+To begin, run `docker exec -it firefish_web /bin/bash` to get a shell in the main container.
 
+Now, add a patch that will make sure migrations revert correctly: `curl -s https://iceshrimp.dev/iceshrimp/iceshrimp/raw/branch/dev/docs/firefish-redis.patch | git apply --ignore-whitespace`.
 
-## Misskey v12.119 and before
+### Docker
+While in the root directory of your cloned firefish repository, run `curl -s https://iceshrimp.dev/iceshrimp/iceshrimp/raw/branch/dev/docs/firefish-redis.patch | git apply --ignore-whitespace`. This patch makes sure migrations revert correctly.
 
-```sh
-git remote set-url origin https://iceshrimp.dev/iceshrimp/iceshrimp.git
-git fetch
-git checkout v2023.11.4 # or any other tag or dev
+## Reverting the migrations
+To begin, run `cd packages/backend` to switch to the backend workspace.
 
-# build and run migrations using preferred method
-```
+Now, revert all of the typeorm migrations. reverted. To do this, run the command `pnpm run revertmigration:typeorm` until the output confirms that the migration `FirefishRepo1689957674000` has been reverted successfully.
 
-> **Note**
-> Migrating from Misskey v13 and its forks (Sharkey et al) is unsupported due to database schema changes.
+If migration `IncreaseHostCharLimit1692374635734` failed to revert, please run `DELETE FROM "migrations" WHERE "name" = 'IncreaseHostCharLimit1692374635734';` in the database shell.
 
-## FoundKey
+If you get any other errors here please ask for support in the [chat room](https://chat.iceshrimp.dev).
 
-```sh
-wget -O fk.patch https://iceshrimp.dev/iceshrimp/iceshrimp/raw/branch/dev/docs/fk.patch
-git apply fk.patch
-cd packages/backend
-```
+Finally, revert all the cargo migrations, by running `pnpm run revertmigration:cargo` until `m20230806_170616_fix_antenna_stream_ids` has been reverted. Again, if you get any errors, please ask for support in the [chat room](https://chat.iceshrimp.dev).
 
-Run `npx typeorm migration:revert -d ormconfig.js` for every migration until you see that `uniformThemecolor1652859567549` has been reverted. Command will not terminate properly after reverting, so you'll have to Ctrl-C
+## Switching to Iceshrimp
+### Docker
+First, run `docker compose down` to shut down firefish.
 
-```
-git remote set-url origin https://iceshrimp.dev/iceshrimp/iceshrimp.git
-git fetch
-git checkout v2023.11.4 # or any other tag or dev
+Now, switch out image for the `web` container with `iceshrimp.dev/iceshrimp/iceshrimp:latest`.
+Furthermore, for every volume/mount that's mapped to /firefish, switch it out for /iceshrimp (leaving any trailing text intact).
 
-# build and migrate using preferred method
-```
+Finally, run `docker compose up`, and make sure that it starts up correctly. If everything works, press CTRL+C and run `docker compoe up -d` to start it in the background.
 
-## Firefish
-Run `docker exec -it firefish_web /bin/sh` if using docker, before doing reverts.
+If you get any errors on startup, please ask for support in the [chat room](https://chat.iceshrimp.dev).
 
-Go to `packages/backend`, revert migrations manually using `pnpm run revertmigration:typeorm` for every migration, until `FirefishRepo1689957674000` has been reverted. Command will not terminate properly after reverting, so you'll have to Ctrl-C.  
+### Bare metal
+Before you begin, make sure `git-lfs` is installed on the system, and that the firefish service is stopped.
 
-If you are migrating from versions newer than 1.0.3, you'll also have to run `pnpm run revertmigration:cargo` for every migration, until `m20230806_170616_fix_antenna_stream_ids` has been reverted. 
+Then, switch back to the repository root directory and run `git remote set-url origin https://iceshrimp.dev/iceshrimp/iceshrimp.git`, as well as `git lfs install`.
 
-Build and run migrations using your preferred method.
+Now, run `git fetch --all` to fetch the new commits.
 
-### Troubleshooting
-If migration `IncreaseHostCharLimit1692374635734` failed to revert, please run `DELETE FROM "migrations" WHERE "name" = 'IncreaseHostCharLimit1692374635734';`
+Then, run `git checkout dev` to switch to the `dev` branch, or `git checkout <tag>` to switch to a versioned tag. Make sure to run `git lfs pull` as well, to get all the dependencies.
 
-## Reverse
+Now, run `yarn && yarn build && yarn migrate` to install dependencies, build the project & run all pending migrations.
 
-You ***cannot*** migrate back to Misskey from Iceshrimp due to re-hashing passwords on signin with argon2, however theoretically you should be able to migrate from Iceshrimp to Firefish. You can migrate from Iceshrimp to FoundKey, although this is not recommended due to FoundKey being end-of-life, and may have some problems with alt-text.
+Finally, to clean up now-unnecessary files, run `rm -rf packages/backend/native-utils packages/megalodon`.
+
+You should now be able to start the service back up.
+
+If you get any errors during this process, please ask for support in the [chat room](https://chat.iceshrimp.dev).
+
+## Closing notes
+Please check out the [example configuration file](https://iceshrimp.dev/iceshrimp/iceshrimp/src/branch/dev/.config/example.yml), as it's changed quite a bit since Firefish and you may want to make use of the new features.
+
+If you need further assistance for any reason, please ask for help in the [chat room](https://chat.iceshrimp.dev), we will assist you with the migration.
