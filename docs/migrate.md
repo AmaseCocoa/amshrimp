@@ -6,12 +6,17 @@ Before proceeding, please **ensure you have an up-to-date backup of the database
 First, follow Firefish's [downgrade guide](https://firefish.dev/firefish/firefish/-/blob/downgrade/docs/downgrade.md) to get back to v1.0.5-rc.
 
 ### Docker
-To begin, run `docker exec -it firefish_web /bin/bash` to get a shell in the main container.
+First, stop the container by running `docker compose down`.
 
-Now, add a patch that will make sure migrations revert correctly: `curl -s https://iceshrimp.dev/iceshrimp/iceshrimp/raw/branch/dev/docs/firefish-redis.patch | git apply --ignore-whitespace`.
+Now, run `docker-compose run --rm --entrypoint '/bin/bash' web` to get a shell in the main container.
 
 ### Bare metal
-While in the root directory of your cloned firefish repository, run `curl -s https://iceshrimp.dev/iceshrimp/iceshrimp/raw/branch/dev/docs/firefish-redis.patch | git apply --ignore-whitespace`. This patch makes sure migrations revert correctly.
+First, stop the service. If using systemd, run `sudo systemctl stop firefish.service`.
+
+Now, `cd` into the root of your firefish repository.
+
+## Applying the migrations patch
+To make sure migrations revert correctly, run `curl -s https://iceshrimp.dev/iceshrimp/iceshrimp/raw/branch/dev/docs/firefish-redis.patch | git apply --ignore-whitespace`. This will patch two built JS files related to redis. The patch is ephemeral, once you complete the migration process it will no longer apply. Iceshrimp-JS has the patch built in.
 
 ## Reverting the migrations
 To begin, run `cd packages/backend` to switch to the backend workspace.
