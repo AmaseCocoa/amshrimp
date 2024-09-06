@@ -10,7 +10,7 @@ To begin, run `docker exec -it firefish_web /bin/bash` to get a shell in the mai
 
 Now, add a patch that will make sure migrations revert correctly: `curl -s https://iceshrimp.dev/iceshrimp/iceshrimp/raw/branch/dev/docs/firefish-redis.patch | git apply --ignore-whitespace`.
 
-### Docker
+### Bare metal
 While in the root directory of your cloned firefish repository, run `curl -s https://iceshrimp.dev/iceshrimp/iceshrimp/raw/branch/dev/docs/firefish-redis.patch | git apply --ignore-whitespace`. This patch makes sure migrations revert correctly.
 
 ## Reverting the migrations
