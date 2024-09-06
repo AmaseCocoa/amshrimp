@@ -3,7 +3,7 @@
 Before proceeding, please **ensure you have an up-to-date backup of the database.**
 
 ## Preparations
-First, follow Firefish's [downgrade guide](https://firefish.dev/firefish/firefish/-/blob/downgrade/docs/downgrade.md) to get back to v1.0.5-rc.
+First, follow Firefish's [downgrade guide](https://firefish.dev/firefish/firefish/-/blob/downgrade/docs/downgrade.md) to get back to v1.0.5-rc. When prompted to switch the docker image/git tag, make sure to pick `v1.0.5-rc`, and not `v20240206`. This is to make sure that the migration patch applies correctly.
 
 ### Docker
 First, stop the container by running `docker compose down`.
