@@ -47,6 +47,8 @@ Then, switch back to the repository root directory and run `git remote set-url o
 
 Now, run `git fetch --all` to fetch the new commits.
 
+If you get an error like `couldn't find remote ref` here, run `git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"`, followed by `git remote prune origin` and `git fetch --all`. If you still get any errors,  please ask for support in the [chat room](https://chat.iceshrimp.dev).
+
 Then, run `git checkout dev` to switch to the `dev` branch, or `git checkout <tag>` to switch to a versioned tag. Make sure to run `git lfs pull` as well, to get all the dependencies.
 
 Now, run `yarn && yarn build && yarn migrate` to install dependencies, build the project & run all pending migrations.
