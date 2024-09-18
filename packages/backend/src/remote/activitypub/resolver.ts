@@ -125,14 +125,20 @@ export default class Resolver {
 		const {res, object} = await this.doFetch(value);
 
 		if (object.id == null) throw new Error("Object has no ID");
-		if (res.finalUrl === object.id) return object;
+		const objectId = new URL(object.id);
+		const resFinalUrl = new URL(res.finalUrl);
+		if (resFinalUrl.toString() === objectId.toString()) return object;
 
-		if (new URL(res.finalUrl).host !== new URL(object.id).host)
+		if (resFinalUrl.host !== objectId.host)
 			throw new Error("Object ID host doesn't match final url host");
 
 		const {res: finalRes, object: finalObject} = await this.doFetch(object.id);
 
-		if (finalRes.finalUrl !== finalObject.id)
+		if (finalObject.id == null) throw new Error("Final object has no ID");
+		const finalObjectId = new URL(finalObject.id);
+		const finalResFinalUrl = new URL(finalRes.finalUrl);
+
+		if (finalResFinalUrl.toString() !== finalObjectId.toString())
 			throw new Error("Object ID still doesn't match final URL after second fetch attempt")
 
 		return finalObject;
