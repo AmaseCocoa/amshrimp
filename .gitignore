@@ -34,7 +34,6 @@ coverage
 
 # misskey
 built
-db
 elasticsearch
 redis
 meili_data
