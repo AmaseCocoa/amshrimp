@@ -71,6 +71,9 @@ export default function load() {
 
 	config.searchEngine = config.searchEngine ?? 'https://duckduckgo.com/?q=';
 
+	config.metrics = config.metrics ?? {};
+	config.metrics.enable = config.metrics?.enable ?? false;
+
 	mixin.version = meta.version;
 	mixin.host = url.host;
 	mixin.hostname = url.hostname;

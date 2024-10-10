@@ -3012,6 +3012,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@opentelemetry/api", [\
+      ["npm:1.7.0", {\
+        "packageLocation": "./.yarn/cache/@opentelemetry-api-npm-1.7.0-6263fad98a-bcf7afa705.zip/node_modules/@opentelemetry/api/",\
+        "packageDependencies": [\
+          ["@opentelemetry/api", "npm:1.7.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@paralleldrive/cuid2", [\
       ["npm:2.2.2", {\
         "packageLocation": "./.yarn/cache/@paralleldrive-cuid2-npm-2.2.2-e6061749b2-40ee269d6e.zip/node_modules/@paralleldrive/cuid2/",\
@@ -7299,6 +7308,7 @@ const RAW_RUNTIME_STATE =
           ["pg", "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:8.11.1"],\
           ["private-ip", "npm:2.3.4"],\
           ["probe-image-size", "npm:7.2.3"],\
+          ["prom-client", "npm:15.1.0"],\
           ["promise-limit", "npm:2.7.0"],\
           ["pug", "npm:3.0.2"],\
           ["punycode", "npm:2.3.0"],\
@@ -7470,6 +7480,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/binaryextensions-npm-2.3.0-b7818ff03c-e8ab6e8bbc.zip/node_modules/binaryextensions/",\
         "packageDependencies": [\
           ["binaryextensions", "npm:2.3.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["bintrees", [\
+      ["npm:1.0.2", {\
+        "packageLocation": "./.yarn/cache/bintrees-npm-1.0.2-b28feeda03-071896cea5.zip/node_modules/bintrees/",\
+        "packageDependencies": [\
+          ["bintrees", "npm:1.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -20443,6 +20462,17 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["prom-client", [\
+      ["npm:15.1.0", {\
+        "packageLocation": "./.yarn/cache/prom-client-npm-15.1.0-0b2231d02c-ecb6f40de7.zip/node_modules/prom-client/",\
+        "packageDependencies": [\
+          ["prom-client", "npm:15.1.0"],\
+          ["@opentelemetry/api", "npm:1.7.0"],\
+          ["tdigest", "npm:0.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["promise", [\
       ["npm:7.3.1", {\
         "packageLocation": "./.yarn/cache/promise-npm-7.3.1-5d81d474c0-37dbe58ca7.zip/node_modules/promise/",\
@@ -23171,6 +23201,16 @@ const RAW_RUNTIME_STATE =
           ["b4a", "npm:1.6.4"],\
           ["fast-fifo", "npm:1.3.0"],\
           ["streamx", "npm:2.15.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["tdigest", [\
+      ["npm:0.1.2", {\
+        "packageLocation": "./.yarn/cache/tdigest-npm-0.1.2-b73cfcf726-45be99fa52.zip/node_modules/tdigest/",\
+        "packageDependencies": [\
+          ["tdigest", "npm:0.1.2"],\
+          ["bintrees", "npm:1.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\

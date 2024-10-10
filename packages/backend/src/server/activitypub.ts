@@ -35,6 +35,7 @@ import Outbox, { packActivity } from "./activitypub/outbox.js";
 import { serverLogger } from "./index.js";
 import config from "@/config/index.js";
 import Koa from "koa";
+import { tickFetch } from "@/metrics.js";
 
 // Init router
 const router = new Router();
@@ -223,6 +224,7 @@ router.get("/users/:user/collections/featured", Featured);
 router.get("/users/:user/publickey", async (ctx) => {
 	const instanceActor = await getInstanceActor();
 	if (ctx.params.user === instanceActor.id) {
+		tickFetch();
 		ctx.body = renderActivity(
 			renderKey(instanceActor, await getUserKeypair(instanceActor.id)),
 		);
@@ -287,6 +289,7 @@ router.get("/users/:user", async (ctx, next) => {
 
 	const instanceActor = await getInstanceActor();
 	if (ctx.params.user === instanceActor.id) {
+		tickFetch();
 		await userInfo(ctx, instanceActor);
 		return;
 	}
@@ -312,6 +315,7 @@ router.get("/@:user", async (ctx, next) => {
 	if (!isActivityPubReq(ctx)) return await next();
 
 	if (ctx.params.user === "instance.actor") {
+		tickFetch();
 		const instanceActor = await getInstanceActor();
 		await userInfo(ctx, instanceActor);
 		return;
@@ -333,6 +337,7 @@ router.get("/@:user", async (ctx, next) => {
 });
 
 router.get("/actor", async (ctx, next) => {
+	tickFetch();
 	const instanceActor = await getInstanceActor();
 	await userInfo(ctx, instanceActor);
 });

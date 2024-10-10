@@ -25,6 +25,7 @@ import { verifySignature } from "@/remote/activitypub/check-fetch.js";
 import { Job } from "bullmq";
 import { createQueue, processorTimeout } from "./index.js";
 import config from "@/config/index.js";
+import { tickInbox } from "@/metrics.js";
 
 export const inboxLogger = new Logger("inbox");
 
@@ -220,6 +221,8 @@ async function process(job: Job<InboxJobData>): Promise<string> {
 			});
 		}
 	}
+
+	tickInbox();
 
 	// アクティビティを処理
 	await perform(authUser.user, activity);

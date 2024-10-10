@@ -12,6 +12,7 @@ import type { UserPublickey } from "@/models/entities/user-publickey.js";
 import { verify } from "node:crypto";
 import { toSingle } from "@/prelude/array.js";
 import { createHash } from "node:crypto";
+import { tickFetch } from "@/metrics.js";
 
 export async function hasSignature(req: IncomingMessage): Promise<string> {
 	const meta = await fetchMeta();
@@ -120,7 +121,12 @@ export async function checkFetch(req: IncomingMessage): Promise<number> {
 			return 403;
 		}
 
-		return verifySignature(signature, authUser.key) ? 200 : 401;
+		if (!verifySignature(signature, authUser.key)) {
+			return 401;
+		}
+
+		tickFetch();
+		return 200;
 	}
 	return 200;
 }

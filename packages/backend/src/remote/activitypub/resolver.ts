@@ -25,6 +25,7 @@ import renderFollow from "@/remote/activitypub/renderer/follow.js";
 import { shouldBlockInstance } from "@/misc/should-block-instance.js";
 import { apLogger } from "@/remote/activitypub/logger.js";
 import { In, IsNull, Not } from "typeorm";
+import { tickResolve } from "@/metrics.js";
 
 export default class Resolver {
 	private history: Set<string>;
@@ -127,7 +128,10 @@ export default class Resolver {
 		if (object.id == null) throw new Error("Object has no ID");
 		const objectId = new URL(object.id);
 		const resFinalUrl = new URL(res.finalUrl);
-		if (resFinalUrl.toString() === objectId.toString()) return object;
+		if (resFinalUrl.toString() === objectId.toString()) {
+			tickResolve();
+			return object;
+		}
 
 		if (resFinalUrl.host !== objectId.host)
 			throw new Error("Object ID host doesn't match final url host");
@@ -141,6 +145,7 @@ export default class Resolver {
 		if (finalResFinalUrl.toString() !== finalObjectId.toString())
 			throw new Error("Object ID still doesn't match final URL after second fetch attempt")
 
+		tickResolve();
 		return finalObject;
 	}
 

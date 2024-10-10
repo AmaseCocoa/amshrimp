@@ -150,6 +150,10 @@ export type Source = {
 		s3ForcePathStyle?: boolean;
 	};
 	summalyProxyUrl?: string;
+	metrics?: {
+		enable?: boolean;
+		token?: string;
+	};
 };
 
 /**

@@ -17,6 +17,7 @@ import config from "@/config/index.js";
 import { createQueue, processorTimeout } from "./index.js";
 import { ThinUser } from "../types.js";
 import { Job } from "bullmq";
+import { tickOutbox } from "@/metrics.js";
 
 export const deliverLogger = new Logger("deliver");
 
@@ -54,6 +55,8 @@ async function process(job: Job<DeliverJobData>) {
 			apRequestChart.deliverSucc();
 			federationChart.deliverd(i.host, true);
 		});
+
+		tickOutbox();
 
 		return "Success";
 	} catch (res) {

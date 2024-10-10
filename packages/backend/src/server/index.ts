@@ -33,6 +33,7 @@ import removeTrailingSlash from "koa-remove-trailing-slashes";
 import { koaBody } from "koa-body";
 import { setupEndpointsAuthRoot } from "@/server/api/mastodon/endpoints/auth.js";
 import { CatchErrorsMiddleware } from "@/server/api/mastodon/middleware/catch-errors.js";
+import { handleMetrics } from "@/metrics.js";
 export const serverLogger = new Logger("server", "gray", false);
 
 // Init app
@@ -116,6 +117,10 @@ router.get("/identicon/:x", async (ctx) => {
 		ctx.redirect("/static-assets/avatar.png");
 	}
 });
+
+if (config.metrics?.enable) {
+	router.get("/metrics", handleMetrics);
+}
 
 mastoRouter.use(
 	koaBody({
