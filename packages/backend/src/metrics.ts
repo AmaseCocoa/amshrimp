@@ -123,3 +123,4 @@ export const tickFetch = counter({
 export const tickResolve = counter({
 	name: "iceshrimp_resolve_total",
 	help: "Total AP resolve calls",
+});
