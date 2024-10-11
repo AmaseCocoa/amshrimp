@@ -1,6 +1,7 @@
 # syntax = docker/dockerfile:1.2
 ## Install dev and compilation dependencies, build files
 FROM alpine:3.20 as build
+LABEL stage=build
 WORKDIR /iceshrimp
 
 # Install compilation dependencies
@@ -32,6 +33,7 @@ RUN --mount=type=cache,target=/iceshrimp/.yarncache_focused rm -rf .yarncache/* 
 
 ## Runtime container
 FROM alpine:3.20
+LABEL stage=runtime
 WORKDIR /iceshrimp
 
 # Install runtime dependencies
