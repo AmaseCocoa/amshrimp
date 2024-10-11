@@ -257,19 +257,27 @@ watch(q, () => {
 
 	const searchCustom = () => {
 		const max = 16;
-		const emojis = customEmojis;
+		const emojis: {
+			lowercased: string;
+			lowercasedAliases: string[];
+			emoji: Misskey.entities.CustomEmoji;
+		}[] = customEmojis.map(emoji => ({
+			lowercased: emoji.name.toLowerCase(),
+			lowercasedAliases: emoji.aliases.map(alias => alias.toLowerCase()),
+			emoji,
+		}));
 		const matches = new Set<Misskey.entities.CustomEmoji>();
 
-		const exactMatch = emojis.find((emoji) => emoji.name === newQ);
-		if (exactMatch) matches.add(exactMatch);
+		const exactMatch = emojis.find((emoji) => emoji.lowercased === newQ);
+		if (exactMatch) matches.add(exactMatch.emoji);
 
 		if (newQ.includes(" ")) {
 			// AND検索
 			const keywords = newQ.split(" ");
 
 			// 名前にキーワードが含まれている
-			for (const emoji of emojis) {
-				if (keywords.every((keyword) => emoji.name.includes(keyword))) {
+			for (const { emoji, lowercased } of emojis) {
+				if (keywords.every((keyword) => lowercased.includes(keyword))) {
 					matches.add(emoji);
 					if (matches.size >= max) break;
 				}
@@ -277,12 +285,12 @@ watch(q, () => {
 			if (matches.size >= max) return matches;
 
 			// 名前またはエイリアスにキーワードが含まれている
-			for (const emoji of emojis) {
+			for (const { lowercased, lowercasedAliases, emoji } of emojis) {
 				if (
 					keywords.every(
 						(keyword) =>
-							emoji.name.includes(keyword) ||
-							emoji.aliases.some((alias) =>
+							lowercased.includes(keyword) ||
+							lowercasedAliases.some((alias) =>
 								alias.includes(keyword),
 							),
 					)
@@ -292,32 +300,32 @@ watch(q, () => {
 				}
 			}
 		} else {
-			for (const emoji of emojis) {
-				if (emoji.name.startsWith(newQ)) {
+			for (const { lowercased, emoji } of emojis) {
+				if (lowercased.startsWith(newQ)) {
 					matches.add(emoji);
 					if (matches.size >= max) break;
 				}
 			}
 			if (matches.size >= max) return matches;
 
-			for (const emoji of emojis) {
-				if (emoji.aliases.some((alias) => alias.startsWith(newQ))) {
+			for (const { lowercasedAliases, emoji } of emojis) {
+				if (lowercasedAliases.some((alias) => alias.startsWith(newQ))) {
 					matches.add(emoji);
 					if (matches.size >= max) break;
 				}
 			}
 			if (matches.size >= max) return matches;
 
-			for (const emoji of emojis) {
-				if (emoji.name.includes(newQ)) {
+			for (const { lowercased, emoji } of emojis) {
+				if (lowercased.includes(newQ)) {
 					matches.add(emoji);
 					if (matches.size >= max) break;
 				}
 			}
 			if (matches.size >= max) return matches;
 
-			for (const emoji of emojis) {
-				if (emoji.aliases.some((alias) => alias.includes(newQ))) {
+			for (const { lowercasedAliases, emoji } of emojis) {
+				if (lowercasedAliases.some((alias) => alias.includes(newQ))) {
 					matches.add(emoji);
 					if (matches.size >= max) break;
 				}
