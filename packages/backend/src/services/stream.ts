@@ -37,7 +37,7 @@ class Publisher {
 				: { type: type, body: value };
 
 		redisClient.publish(
-			config.host,
+			config.redis.prefix ?? config.host,
 			JSON.stringify({
 				channel: channel,
 				message: message,
