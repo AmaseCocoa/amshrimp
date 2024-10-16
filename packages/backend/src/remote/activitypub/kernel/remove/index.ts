@@ -1,6 +1,6 @@
 import type { CacheableRemoteUser } from "@/models/entities/user.js";
 import type { IRemove } from "../../type.js";
-import { resolveNote } from "../../models/note.js";
+import { fetchNote } from "../../models/note.js";
 import { removePinned } from "@/services/i/pin.js";
 
 export default async (
@@ -16,8 +16,8 @@ export default async (
 	}
 
 	if (activity.target === actor.featured) {
-		const note = await resolveNote(activity.object);
-		if (note == null) throw new Error("note not found");
+		const note = await fetchNote(activity.object);
+		if (note == null) return; // not pinned either way
 		await removePinned(actor, note.id);
 		return;
 	}

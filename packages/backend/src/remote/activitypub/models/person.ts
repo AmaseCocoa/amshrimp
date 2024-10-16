@@ -753,6 +753,10 @@ export async function updateFeatured(userId: User["id"], resolver?: Resolver, li
 
 	if (resolver == null) resolver = new Resolver();
 
+	// Attempt to get a local user that follows the remote user
+	const follower = await Users.getRandomFollower(userId);
+	if (follower) resolver.setUser(follower);
+
 	// Resolve to (Ordered)Collection Object
 	const collection = await resolver.resolveCollection(user.featured);
 	if (!isCollectionOrOrderedCollection(collection))

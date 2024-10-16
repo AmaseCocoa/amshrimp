@@ -2,6 +2,8 @@ import type { CacheableRemoteUser } from "@/models/entities/user.js";
 import type { IAdd } from "../../type.js";
 import { resolveNote } from "../../models/note.js";
 import { addPinned } from "@/services/i/pin.js";
+import Resolver from "../../resolver.js";
+import { Users } from "@/models/index.js";
 
 export default async (
 	actor: CacheableRemoteUser,
@@ -16,7 +18,11 @@ export default async (
 	}
 
 	if (activity.target === actor.featured) {
-		const note = await resolveNote(activity.object);
+		const resolver = new Resolver();
+		const follower = await Users.getRandomFollower(actor.id);
+		if (follower) resolver.setUser(follower);
+
+		const note = await resolveNote(activity.object, resolver);
 		if (note == null) throw new Error("note not found");
 		await addPinned(actor, note.id);
 		return;

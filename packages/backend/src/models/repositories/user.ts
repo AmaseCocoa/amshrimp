@@ -383,6 +383,14 @@ export const UserRepository = db.getRepository(User).extend({
 		};
 	},
 
+	async getRandomFollower(targetId: string): Promise<User | null> {
+		return await this.createQueryBuilder("u")
+			.select(`u.id`)
+			.leftJoinAndSelect("following", "f", `f."followerId" = u.id`)
+			.where(`f."followeeId" = :id`, { id: targetId })
+			.getOne();
+	},
+
 	async packCached<
 		ExpectsMe extends boolean | null = null,
 		D extends boolean = false,
