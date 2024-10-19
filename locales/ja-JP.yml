@@ -1060,7 +1060,7 @@ _registry:
   domain: "ドメイン"
   createKey: "キーを作成"
 _aboutIceshrimp:
-  about: "Iceshrimpは、2022年に生まれたThatOneCalculatorによるIceshrimpのforkです。"
+  about: "Iceshrimpは、2023年に生まれた新しいFirefish & Misskeyのforkです。"
   contributors: "主なコントリビューター"
   allContributors: "全てのコントリビューター"
   source: "ソースコード"
