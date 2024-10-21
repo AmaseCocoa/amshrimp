@@ -74,8 +74,8 @@ exportRequested: "Se ha solicitado la exportación. Puede tomar un tiempo. Cuand
 importRequested: "Se ha solicitado la importación. Puede tomar un tiempo."
 lists: "Listas"
 noLists: "No tienes ninguna lista"
-note: "Redactar"
-notes: "Publicaciones"
+note: "Anotar"
+notes: "Notas"
 following: "Siguiendo"
 followers: "Seguidores"
 followsYou: "Te sigue"
@@ -100,13 +100,13 @@ followRequests: "Peticiones de seguimiento"
 unfollow: "Dejar de seguir"
 followRequestPending: "Peticiones de seguimiento pendientes"
 enterEmoji: "Introduce un emoji"
-renote: "Impulsar"
-unrenote: "Quitar impulso"
-renoted: "Impulsado."
-cantRenote: "No se puede impulsar esta publicación."
-cantReRenote: "No se puede impulsar un impulso."
+renote: "Renotar"
+unrenote: "Quitar renota"
+renoted: "Renotado."
+cantRenote: "No se puede renotar esta publicación."
+cantReRenote: "No se puede renotar una renota."
 quote: "Citar"
-pinnedNote: "Publicación fijada"
+pinnedNote: "Nota fijada"
 pinned: "Fijar al perfil"
 you: "Tú"
 clickToShow: "Click para ver"
@@ -116,7 +116,7 @@ reaction: "Reacciones"
 reactionSetting: "Reacciones para mostrar en el menú de reacciones"
 reactionSettingDescription2: "Arrastra para reordenar, click para borrar, pulsa \"\
   +\" para añadir."
-rememberNoteVisibility: "Recordar la configuración de visibilidad de la publicación"
+rememberNoteVisibility: "Recordar la configuración de visibilidad de las notas"
 attachCancel: "Quitar adjunto"
 markAsSensitive: "Marcar como sensible"
 unmarkAsSensitive: "Desmarcar como sensible"
@@ -216,7 +216,7 @@ mutedUsers: "Usuarios silenciados"
 blockedUsers: "Usuarios bloqueados"
 noUsers: "No hay usuarios"
 editProfile: "Editar perfil"
-noteDeleteConfirm: "¿Quieres borrar esta publicación?"
+noteDeleteConfirm: "¿Quieres borrar esta nota?"
 pinLimitExceeded: "Ya no se pueden fijar más publicaciones"
 intro: "¡La instalación de Iceshrimp ha terminado! Por favor, crea un usuario administrador."
 done: "Terminado"
@@ -363,7 +363,7 @@ pinnedPages: "Páginas fijadas"
 pinnedPagesDescription: "Escribe las rutas a las páginas que quieres anclar en el
   servidor, separadas por líneas nuevas."
 pinnedClipId: "ID del clip a fijar"
-pinnedNotes: "Publicaciones fijadas"
+pinnedNotes: "Notas fijadas"
 hcaptcha: "hCaptcha"
 enableHcaptcha: "Activar hCaptcha"
 hcaptchaSiteKey: "Clave del sitio"
@@ -390,7 +390,7 @@ antennaUsersDescription: "Un nombre de usuario por cada línea"
 caseSensitive: "Distinguir mayúsculas de minúsculas"
 withReplies: "Incluir respuestas"
 connectedTo: "Estas cuentas están conectadas"
-notesAndReplies: "Publicaciones y respuestas"
+notesAndReplies: "Notas y respuestas"
 withFiles: "Adjuntos"
 silence: "Silenciar"
 silenceConfirm: "¿Quieres silenciar al usuario?"
@@ -427,7 +427,7 @@ notFoundDescription: "No se encontró la página correspondiente a la URL."
 uploadFolder: "Carpeta por defecto para subidas"
 cacheClear: "Borrar caché"
 markAsReadAllNotifications: "Marcar todas las notificaciones como leídas"
-markAsReadAllUnreadNotes: "Marcar todas las publicaciones como leídas"
+markAsReadAllUnreadNotes: "Marcar todas las notas como leídas"
 markAsReadAllTalkMessages: "Marcar todos los mensajes como leídos"
 help: "Ayuda"
 inputMessageHere: "Escribe el mensaje aquí"
@@ -448,7 +448,7 @@ text: "Texto"
 enable: "Activar"
 next: "Siguiente"
 retype: "otra vez"
-noteOf: "Publicaciones de {user}"
+noteOf: "Notas de {user}"
 inviteToGroup: "Invitar al grupo"
 quoteAttached: "Cita añadida"
 quoteQuestion: "¿Quieres añadir una cita?"
@@ -507,8 +507,8 @@ accountSettings: "Ajustes de cuenta"
 promotion: "Promovido"
 promote: "Promover"
 numberOfDays: "Cantidad de dias"
-hideThisNote: "Ocultar esta publicación"
-showFeaturedNotesInTimeline: "Mostrar publicaciones destacadas en la línea de tiempo"
+hideThisNote: "Ocultar esta nota"
+showFeaturedNotesInTimeline: "Mostrar notas destacadas en la línea de tiempo"
 objectStorage: "Almacenamiento de objetos"
 useObjectStorage: "Usar almacenamiento de objetos"
 objectStorageBaseUrl: "URL Base"
@@ -537,7 +537,7 @@ objectStorageSetPublicRead: "Seleccionar \"public-read\" al subir"
 serverLogs: "Registros del servidor"
 deleteAll: "Eliminar todos"
 showFixedPostForm: "Mostrar el formulario de las entradas encima de la línea de tiempo"
-newNoteRecived: "Hay publicaciones nuevas"
+newNoteRecived: "Hay notas nuevas"
 sounds: "Sonidos"
 listen: "Escuchar"
 none: "Ninguna"
@@ -585,8 +585,8 @@ addRelay: "Añadir relé"
 inboxUrl: "Inbox URL"
 addedRelays: "Relés añadidos"
 serviceworkerInfo: "Se necesita activar para usar las notificaciones push."
-deletedNote: "Publicación eliminada"
-invisibleNote: "Publicación oculta"
+deletedNote: "Nota eliminada"
+invisibleNote: "Nota oculta"
 enableInfiniteScroll: "Cargar más publicaciones automáticamente"
 visibility: "Visibilidad"
 poll: "Encuesta"
@@ -695,18 +695,18 @@ createNew: "Crear nuevo"
 optional: "Opcional"
 createNewClip: "Crear clip nuevo"
 unclip: "Quitar clip"
-confirmToUnclipAlreadyClippedNote: "Esta publicación ya está incluida en el clip \"\
-  {name}\". ¿Quieres quitar la publicación del clip?"
+confirmToUnclipAlreadyClippedNote: "Esta nota ya está incluida en el clip \"{name}\"\
+  . ¿Quieres quitar la nota del clip?"
 public: "Público"
 i18nInfo: "Iceshrimp está siendo traducido a varios idiomas gracias a voluntarios.
   Puedes colaborar en {link}."
 manageAccessTokens: "Administrar tokens de acceso"
 accountInfo: "Información de la cuenta"
-notesCount: "Cantidad de publicaciones"
+notesCount: "Cantidad de notas"
 repliesCount: "Cantidad de respuestas hechas"
-renotesCount: "Cantidad de impulsos hechos"
+renotesCount: "Cantidad de renotas hechas"
 repliedCount: "Cantidad de respuestas recibidas"
-renotedCount: "Cantidad de impulsos recibidos"
+renotedCount: "Cantidad de renotas recibidas"
 followingCount: "Cantidad de seguidos"
 followersCount: "Cantidad de seguidores"
 sentReactionsCount: "Cantidad de reacciones hechas"
@@ -730,7 +730,7 @@ verificationEmailSent: "Se ha enviado un correo de confirmación. Por favor, acc
   al enlace proporcionado en el correo para completar la verificación."
 notSet: "Sin especificar"
 emailVerified: "El correo se ha verificado"
-noteFavoritesCount: "Número de publicaciones en marcadores"
+noteFavoritesCount: "Número de notas en marcadores"
 pageLikesCount: "Número de páginas favoritas"
 pageLikedCount: "Número de favoritos de su página"
 contact: "Contacto"
@@ -741,8 +741,7 @@ developer: "Desarrolladores"
 makeExplorable: "Hacer visible la cuenta en \"Explorar\""
 makeExplorableDescription: "Si desactivas esta opción, tu cuenta no aparecerá en la
   sección \"Explorar\"."
-showGapBetweenNotesInTimeline: "Mostrar un espacio entre publicaciones en la línea
-  de tiempo"
+showGapBetweenNotesInTimeline: "Mostrar un espacio entre notas en la línea de tiempo"
 duplicate: "Duplicar"
 left: "Izquierda"
 center: "Centrar"
@@ -755,7 +754,7 @@ showTitlebar: "Mostrar la barra de título"
 clearCache: "Limpiar caché"
 onlineUsersCount: "{n} usuarios en línea"
 nUsers: "{n} usuarios"
-nNotes: "{n} publicaciones"
+nNotes: "{n} notas"
 sendErrorReports: "Envíar informe de errores"
 sendErrorReportsDescription: "Si habilitas esta opción, la información detallada de
   los errores será compartida con Iceshrimp cuando ocurra un problema, lo que ayudará
@@ -833,10 +832,10 @@ postToGallery: "Crear una nueva publicación en la galería"
 gallery: "Galería"
 recentPosts: "Páginas recientes"
 popularPosts: "Páginas populares"
-shareWithNote: "Compartir en una publicación"
+shareWithNote: "Compartir en una nota"
 ads: "Anuncios"
 expiration: "Termina el"
-memo: "Notas"
+memo: "Memo"
 priority: "Prioridad"
 high: "Alta"
 middle: "Media"
@@ -870,7 +869,7 @@ pubSub: "Cuentas Pub/Sub"
 lastCommunication: "Última comunicación"
 resolved: "Resuelto"
 unresolved: "Sin resolver"
-breakFollow: "Dejar de seguir"
+breakFollow: "Eliminar seguidor"
 itsOn: "Encendido"
 itsOff: "Apagado"
 emailRequiredForSignup: "Requerir una dirección de email para registrarse"
@@ -1170,7 +1169,7 @@ _mfm:
     una animación MFM se reproduzca
   fade: Difuminado
   fadeDescription: Difumina el contenido.
-  positionDescription: Mueev el contenido una cantidad específica.
+  positionDescription: Mueve el contenido una cantidad específica.
   crop: Cortar
   cropDescription: Cortar contenido.
   scale: Escalar
@@ -1207,7 +1206,7 @@ _channel:
   owned: "Dueño"
   following: "Siguiendo"
   usersCount: "{n} participantes"
-  notesCount: "{n} publicaciones"
+  notesCount: "{n} notas"
   nameOnly: Sólo nombre
   nameAndDescription: Nombre y descripción
 _menuDisplay:
@@ -1228,7 +1227,7 @@ _wordMute:
     de tiempo incluso si las condiciones cambian."
   soft: "Suave"
   hard: "Duro"
-  mutedNotes: "Publicaciones silenciadas"
+  mutedNotes: "Notas silenciadas"
 _instanceMute:
   instanceMuteDescription: "Esto silenciará todas las publicaciones/impulsos de los
     servidores listados, inclutendo los usuarios respondiendo a un usuario de un servidor
@@ -1284,7 +1283,7 @@ _theme:
     hashtag: "Hashtag"
     mention: "Mención"
     mentionMe: "Menciones (yo)"
-    renote: "Impulsar"
+    renote: "Renotar"
     modalBg: "Fondo modal"
     divider: "Divisor"
     scrollbarHandle: "Cuadro de la barra de desplazamiento"
@@ -1311,8 +1310,8 @@ _theme:
     accentLighten: "Acento (claro)"
     fgHighlighted: "Texto resaltado"
 _sfx:
-  note: "Publicación nueva"
-  noteMy: "Publicación (a mí mismo)"
+  note: "Nota nueva"
+  noteMy: "Nota (a mí mism@)"
   notification: "Notificaciones"
   chat: "Chat"
   chatBg: "Chat (Fondo)"
@@ -1414,7 +1413,7 @@ _permissions:
   "write:messaging": "Administrar chat"
   "read:mutes": "Ver usuarios silenciados"
   "write:mutes": "Administrar usuarios silenciados"
-  "write:notes": "Crear/borrar publicaciones"
+  "write:notes": "Crear/borrar notas"
   "read:notifications": "Ver notificaciones"
   "write:notifications": "Administrar notificaciones"
   "read:reactions": "Ver reacciones"
@@ -1460,7 +1459,7 @@ _weekday:
   friday: "Viernes"
   saturday: "Sábado"
 _widgets:
-  memo: "Nota adhesiva"
+  memo: "Notas Adhesivas"
   notifications: "Notificaciones"
   timeline: "Linea de tiempo"
   calendar: "Calendario"
@@ -1554,7 +1553,7 @@ _profile:
   locationDescription: Si introduces tu ciudad primero, tu hora local será visible
     para otros usuarios.
 _exportOrImport:
-  allNotes: "Todas las publicaciones"
+  allNotes: "Todas las notas"
   followingList: "Siguiendo"
   muteList: "Silenciados"
   blockingList: "Bloqueados"
@@ -1567,10 +1566,10 @@ _charts:
   usersIncDec: "Variación de usuarios"
   usersTotal: "Total de usuarios"
   activeUsers: "Cantidad de usuarios activos"
-  notesIncDec: "Variación de la cantidad de publicaciones"
-  localNotesIncDec: "Variación de la cantidad de publicaciones locales"
-  remoteNotesIncDec: "Variación de la cantidad de publicaciones remotas"
-  notesTotal: "Total de publicaciones"
+  notesIncDec: "Variación de la cantidad de notas"
+  localNotesIncDec: "Variación de la cantidad de notas locales"
+  remoteNotesIncDec: "Variación de la cantidad de notas remotas"
+  notesTotal: "Total de notas"
   filesIncDec: "Variación de cantidad de archivos"
   filesTotal: "Total de archivos"
   storageUsageIncDec: "Variación de uso del almacenamiento"
@@ -1579,8 +1578,8 @@ _instanceCharts:
   requests: "Pedidos"
   users: "Variación de usuarios"
   usersTotal: "Total acumulado de usuarios"
-  notes: "Variación de la cantidad de publicaciones"
-  notesTotal: "Total acumulado de la cantidad de publicaciones"
+  notes: "Variación de la cantidad de notas"
+  notesTotal: "Total acumulado de la cantidad de notas"
   ff: "Variación de cantidad de seguidos/seguidores "
   ffTotal: "Total acumulado de cantidad de seguidos/seguidores"
   cacheSize: "Variación del tamaño de la caché"
@@ -1667,10 +1666,10 @@ _pages:
       id: "ID del canvas"
       width: "Anchura"
       height: "Altura"
-    note: "Publicación embebida"
+    note: "Nota embebida"
     _note:
-      id: "ID de la publicación"
-      idDescription: "Alternativamente, puedes pegar la URL de la publicacón aquí."
+      id: "ID de la nota"
+      idDescription: "Alternativamente, puedes pegar la URL de la nota aquí."
       detailed: "Ver detalles"
     switch: "Interruptor"
     _switch:
@@ -1893,7 +1892,7 @@ _notification:
   youGotMention: "{name} te ha mencionado"
   youGotReply: "{name} te ha respondido"
   youGotQuote: "{name} te ha citado"
-  youRenoted: "Impulsado por {name}"
+  youRenoted: "Renotado por {name}"
   youGotPoll: "{name} votó en tu encuesta"
   youGotMessagingMessageFromUser: "{name} te mandó un mensaje"
   youGotMessagingMessageFromGroup: "Un mensaje de chat fue enviado al grupo {name}"
@@ -1908,7 +1907,7 @@ _notification:
     follow: "Seguidores nuevos"
     mention: "Menciones"
     reply: "Respuestas"
-    renote: "Impulsos"
+    renote: "Renotas"
     quote: "Citas"
     reaction: "Reacciones"
     pollVote: "Votos en encuestas"
@@ -1920,10 +1919,10 @@ _notification:
   _actions:
     followBack: "te sigue de vuelta"
     reply: "Responder"
-    renote: "Impulsos"
+    renote: "Renotas"
   voted: votó en tu encuesta
   reacted: reaccionó a tu publicación
-  renoted: impulsó tu publicación
+  renoted: renotó tu publicación
 _deck:
   alwaysShowMainColumn: "Siempre mostrar la columna principal"
   columnAlign: "Alinear columnas"
@@ -1959,8 +1958,8 @@ manageGroups: Administrar grupos
 replayTutorial: Repetir tutorial
 privateMode: Modo privado
 addInstance: Añadir una instancia
-renoteMute: Silenciar impulsos
-renoteUnmute: Dejar de silenciar impulsos
+renoteMute: Silenciar renotas
+renoteUnmute: Dejar de silenciar renotas
 flagSpeakAsCat: Habla como un gato
 selectInstance: Selecciona un servidor
 flagSpeakAsCatDescription: Tus publicaciones se "nyanificarán" cuando estés en modo
@@ -1989,7 +1988,7 @@ enterSendsMessage: Presione intro en los mensajes para enviar el mensaje (para a
   es Ctrl + Intro)
 recommendedInstances: Instancias recomendadas
 instanceSecurity: Seguridad de la instancia
-seperateRenoteQuote: Separar botones "Impulsar" y "Citar"
+seperateRenoteQuote: Separar botones "Renotar" y "Citar"
 _messaging:
   groups: Grupos
   dms: Privado
@@ -1999,10 +1998,10 @@ migration: Migración
 silenced: Silenciado
 deleted: Borrado
 edited: 'Editado el {date} a las {time}'
-editNote: Editar publicación
+editNote: Editar nota
 silenceThisInstance: Silenciar este servidor
 findOtherInstance: Buscar otro servidor
-userSaysSomethingReasonRenote: '{name} impulsó una publicación que contiene {reason]'
+userSaysSomethingReasonRenote: '{name} Renotó una nota que contiene {reason]'
 enableRecommendedTimeline: Habilitar línea de tiempo recomendada
 searchPlaceholder: Buscar en el Fediverso
 listsDesc: Las listas te permiten crear líneas de tiempo con usuarios específicos.
@@ -2036,9 +2035,9 @@ cannotChangeScopeWhenEditing: No puedes cambiar la visibilidad mientras editas
 antennaTimelineHint: Las antenas muestran las publicaciones en el orden que las reciben,
   que no tiene que ser necesariamente cronológico.
 accessibility: Accesibilidad
-expandOnNoteClick: Abrir publicación al pulsar
-expandOnNoteClickDesc: Si se desactiva, aun podrás abrir publicaciones con el menú
-  del click derecho o pulsando en la marca de tiempo.
+expandOnNoteClick: Abrir nota al pulsar
+expandOnNoteClickDesc: Si se desactiva, aun podrás abrir notas con el menú del click
+  derecho o pulsando en la marca de tiempo.
 xl: XL
 userSaysSomethingReasonReply: '{name} respondió a una publicación que contiene {reason}'
 userSaysSomethingReasonQuote: '{name} citó una publicación que contiene {reason}'
@@ -2057,12 +2056,12 @@ _filters:
     title: Sintaxis del filtro de búsqueda
     learnMore: Ver sintaxis del filtro
     inFilters: Filtrar por marcador y/o estado de favorito
-    exclusivity: 'Nota: el filtro "antes:" es exclusivo, mientras que el filtro "después:"
+    exclusivity: 'Aviso: el filtro "antes:" es exclusivo, mientras que el filtro "después:"
       es inclusivo.'
     info1: El texto en brackets significa paramétros disponibles opcionales del filtro.
       Las opciones del parámetro se indican mediante una barra vertical ( | ).
     wordFilters: FIltrar por texto de publicación
-    miscFilters: Filtrar por relación de seguimiento y/o tipo de publicación
+    miscFilters: Filtrar por relación de seguimiento y/o tipo de nota
     userDomain: Filtrar por autor, usuarios mencionados, usuario que responde o dominio
       de instancia
     postDate: Filtrar por fecha de la publicación
@@ -2085,12 +2084,12 @@ _filters:
   inBookmarks: Marcado
   withFile: Tiene adjunto(s)
   fromDomain: Sólo instancia específica
-  notesBefore: Publicaciones antes
-  notesAfter: Publicaciones después
+  notesBefore: Notas antes
+  notesAfter: Notas después
   followingOnly: Solo siguiendo
   followersOnly: Solo seguidores
   repliesOnly: Solo respuestas
-  excludeRenotes: Excluir impulsos
+  excludeRenotes: Excluir renotas
   caseSensitive: Distinguir mayúsculas
   matchWords: Coincidir palabras completas
 searchEmptyQuery: Por favor, introduce un término de búsqueda.
@@ -2118,7 +2117,7 @@ showAdminUpdates: Indicar cuando una nueva versión de Iceshrimp esté disponibl
 moveTo: Migrar cuenta actual a una cuenta nueva
 moveToLabel: 'Cuenta a la que migras:'
 enableCustomKaTeXMacro: Activar macros KaTeX personalizadas
-noteId: ID de la publicación
+noteId: ID de la nota
 signupsDisabled: Los registros en esta instancia ahora mismo están desactivados, ¡pero
   puedes registrarte en otro servidor! Si tienes un código de invitación para esta
   instancia, por favor, introdúcelo debajo.
@@ -2135,7 +2134,7 @@ migrationConfirm: "¿Estás absolutamente seguro de que quieres migrar tu cuenta
   la que migras."
 customKaTeXMacroDescription: '¡Configura macros para escribir expresiones matemáticas
   con facilidad! La notación es conforme a las definiciones de comandos LaTeX y se
-  escriben como \nuevocomando{\nombre}{contenido} o \nuevocomando{\nombre}{número
+  escriben como \nuevocomando{\ nombre}{contenido} o \nuevocomando{\nombre}{número
   de argumentos}{contenido}. Por ejemplo, \nuevocomando{\add}{2}{#1 + #2} expandirá
   \add{3}{foo} a 3 + foo. Los brackets curvos que rodean el nombre de la macro se
   pueden cambiar por brackets sólidos o paréntesis. Esto afecta a los brackets usados
