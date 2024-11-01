@@ -145,7 +145,7 @@ addEmoji: "絵文字を追加"
 settingGuide: "おすすめ設定"
 cacheRemoteFiles: "リモートのファイルをキャッシュする"
 cacheRemoteFilesDescription: "この設定を無効にすると、リモートファイルをキャッシュせず直リンクします。サーバーのストレージを節約できますが、サムネイルが生成されないので通信量が増加します。"
-flagAsBot: "Botとして設定"
+flagAsBot: "Botとして設定🤖"
 flagAsBotDescription: "このアカウントがBotである場合は、この設定をオンにします。オンにすると、反応の連鎖を防ぐためのフラグとして他の開発者に役立ったり、Iceshrimpのシステム上での扱いがBotに合ったものになります。"
 flagAsCat: "あなたは…猫？😺"
 flagAsCatDescription: "このアカウントが猫であることを示す猫モードを有効にするには、このフラグをオンにします。"
@@ -215,7 +215,7 @@ noteDeleteConfirm: "この投稿を削除しますか？"
 pinLimitExceeded: "これ以上ピン留めできません"
 intro: "Iceshrimpのインストールが完了しました！管理者アカウントを作成しましょう。"
 done: "完了"
-processing: "処理中"
+processing: "処理中…"
 preview: "プレビュー"
 default: "デフォルト"
 defaultValueIs: "デフォルト: {value}"
@@ -239,7 +239,7 @@ currentPassword: "現在のパスワード"
 newPassword: "新しいパスワード"
 newPasswordRetype: "新しいパスワード(再入力)"
 attachFile: "ファイルを添付"
-more: "もっと！"
+more: "もっと"
 featured: "ハイライト"
 usernameOrUserId: "ユーザー名かユーザーID"
 noSuchUser: "ユーザーが見つかりません"
@@ -875,7 +875,7 @@ numberOfColumn: "列の数"
 searchByGoogle: "検索"
 instanceDefaultLightTheme: "サーバーの標準ライトテーマ"
 instanceDefaultDarkTheme: "サーバーの標準ダークテーマ"
-instanceDefaultThemeDescription: "オブジェクト形式のテーマコードを記入します。"
+instanceDefaultThemeDescription: "JSON形式のテーマコードを記入します。"
 mutePeriod: "ミュートする期限"
 indefinitely: "無期限"
 tenMinutes: "10分"
@@ -922,8 +922,8 @@ cannotUploadBecauseInappropriate: "不適切な内容を含む可能性がある
 cannotUploadBecauseNoFreeSpace: "ドライブの空き容量が無いためアップロードできません。"
 cannotUploadBecauseExceedsFileSizeLimit: "ファイルサイズの制限を超えているためアップロードできません。"
 beta: "ベータ"
-enableAutoSensitive: "自動NSFW判定"
-enableAutoSensitiveDescription: "利用可能な場合は、機械学習を利用して自動でメディアにNSFWフラグを設定します。この機能をオフにしても、サーバーによっては自動で設定されることがあります。"
+enableAutoSensitive: "自動閲覧注意フラグ判定"
+enableAutoSensitiveDescription: "利用可能な場合は、機械学習を利用して自動でメディアに閲覧注意フラグを設定します。この機能をオフにしても、サーバーによっては自動で設定されることがあります。"
 activeEmailValidationDescription: "ユーザーのメールアドレスのバリデーションを、捨てアドかどうかや実際に通信可能かどうかなどを判定しより積極的に行います。オフにすると単に文字列として正しいかどうかのみチェックされます。"
 showAds: "広告を表示する"
 navbar: "ナビゲーションバー"
@@ -989,7 +989,7 @@ _sensitiveMediaDetection:
   description: "機械学習を使って自動でセンシティブなメディアを検出し、モデレーションに役立てられます。サーバーの負荷が少し増えます。"
   sensitivity: "検出感度"
   sensitivityDescription: "感度を低くすると、誤検知(偽陽性)が減ります。感度を高くすると、検知漏れ(偽陰性)が減ります。"
-  setSensitiveFlagAutomatically: "NSFWフラグを設定する"
+  setSensitiveFlagAutomatically: "閲覧注意(NSFW)フラグを設定する"
   setSensitiveFlagAutomaticallyDescription: "この設定をオフにしても内部的に判定結果は保持されます。"
   analyzeVideos: "動画の解析を有効化"
   analyzeVideosDescription: "静止画に加えて動画も解析するようにします。サーバーの負荷が少し増えます。"
@@ -1013,7 +1013,7 @@ _accountDelete:
   sendEmail: "アカウントの削除が完了した際に、登録されていたメールアドレス宛に通知を送信します。"
   requestAccountDelete: "アカウント削除をリクエスト"
   started: "削除処理を開始しました。"
-  inProgress: "削除が進行中"
+  inProgress: "アカウント削除が進行中"
 _ad:
   back: "戻る"
   reduceFrequencyOfThisAd: "この広告の表示頻度を下げる"
@@ -1053,6 +1053,7 @@ _preferencesBackups:
   updatedAt: "更新日時: {date} {time}"
   cannotLoad: "読み込めません。"
   invalidFile: "ファイル形式が違います。"
+  delete: バックアップを削除
 _registry:
   scope: "スコープ"
   key: "キー"
@@ -1063,8 +1064,8 @@ _aboutIceshrimp:
   about: "Iceshrimpは、2023年に生まれた新しいFirefish & Misskeyのforkです。"
   contributors: "主なコントリビューター"
   allContributors: "全てのコントリビューター"
-  source: "ソースコード"
-  translation: "Iceshrimpを翻訳"
+  source: "Iceshrimpの開発"
+  translation: "翻訳"
   donate: "Iceshrimpに寄付"
   morePatrons: "他にも多くの方が支援してくれています。ありがとうございます！ 🥰"
   patrons: "支援者"
@@ -1073,13 +1074,17 @@ _aboutIceshrimp:
   pleaseDonateToHost: また、このサーバー {host} の運営者への寄付もご検討ください。
   donateHost: '{host} に寄付する'
   donateTitle: Iceshrimpを気に入りましたか？
+  documentation: ドキュメント
+  chatroom: チャットルーム
+  changelog: 変更履歴
+  sponsors: Iceshrimpの支援者
 _nsfw:
   respect: "閲覧注意のメディアは隠す"
   ignore: "閲覧注意のメディアを隠さない"
   force: "常にメディアを隠す"
 _mfm:
   cheatSheet: "MFMチートシート"
-  intro: "MFMは、IceshrimpやIceshrimp、Akkomaなどの様々な場所で使用できるマークアップ言語です。ここでは、MFMで使用可能な構文一覧が確認できます。"
+  intro: "MFMは、IceshrimpやMisskey、Akkomaなどの投稿とチャットで使用できるマークアップ言語です。ここでは、MFMで使用可能な構文一覧が確認できます。"
   dummy: "IceshrimpでFediverseの世界が広がります"
   mention: "メンション"
   mentionDescription: "アットマーク + ユーザー名で、特定のユーザーを示せます。"
@@ -1473,16 +1478,16 @@ _visibility:
   localOnly: "ローカルのみ"
   localOnlyDescription: "リモートユーザーには非公開"
 _postForm:
-  replyPlaceholder: "この投稿に返信..."
-  quotePlaceholder: "この投稿を引用..."
-  channelPlaceholder: "チャンネルに投稿..."
+  replyPlaceholder: "この投稿に返信…"
+  quotePlaceholder: "この投稿を引用…"
+  channelPlaceholder: "チャンネルに投稿…"
   _placeholders:
     a: "いまどうしてる？"
     b: "何かありましたか？"
     c: "何をお考えですか？"
     d: "言いたいことは？"
     e: "ここに書いてください"
-    f: "あなたが書くのを待っています..."
+    f: "あなたが書くのを待っています…"
 _profile:
   name: "名前"
   username: "ユーザー名"
@@ -1911,7 +1916,7 @@ accessibility: アクセシビリティ
 jumpToPrevious: 前に戻る
 cw: 閲覧注意
 silencedWarning: スパムの可能性があるため、これらのユーザーが所属するサーバーは管理者によりサイレンスされています。
-searchPlaceholder: Iceshrimpを検索
+searchPlaceholder: Fediverseを検索
 channelFederationWarn: 現時点では、チャンネルは他のサーバーへ連合しません
 listsDesc: リストでは指定したユーザーだけのタイムラインを作れます。リストには「タイムライン」のページからアクセスできます。
 antennasDesc: "アンテナでは指定した条件に合致する投稿が表示されます。\nアンテナには「タイムライン」のページからアクセスできます。"
@@ -1958,3 +1963,12 @@ _feeds:
   rss: RSS
   jsonFeed: JSONフィード
   copyFeed: フィードのURLをコピー
+alwaysExpandCws: 閲覧注意投稿を常に展開する
+searchEmptyQuery: 検索する言葉を入力してください。
+verifiedLink: 認証済みリンク
+_cwStyle:
+  modern: モダン
+  classic: クラシック (Misskey/Foundkey-like)
+  alternative: 代替(Firefish-like)
+cwStyle: 閲覧注意投稿の表示スタイル
+searchNotLoggedIn_2: しかし、ハッシュタグ検索とユーザー検索は利用できます。
