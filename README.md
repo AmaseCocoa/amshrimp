@@ -1,6 +1,4 @@
-<p><img src="assets/logo.png" alt="Iceshrimp" width="400px"></p>
-<p><strong>Iceshrimp</strong> is a decentralized and federated social networking service, implementing the <strong>ActivityPub</strong> standard.<br>
-It was forked from <del>Calckey</del> Firefish (itself a fork of Misskey) in mid-2023, to focus on stability, performance and usability instead of new features.</p>
+AmShrimp is a fork of Iceshrimp (JS) focused on fixing problems and maintenance.
 
 ---
 
@@ -46,6 +44,3 @@ It was forked from <del>Calckey</del> Firefish (itself a fork of Misskey) in mid
 - Need help or want to contribute? Join the [chat room](https://chat.iceshrimp.dev)!
 
 ---
-
-[![](https://hc.ztn.sh/badge/4fc73efa-2790-4146-86bf-8685c5d6b1f7/SDOthVyf-2/archlinux.svg)](https://iceshrimp.dev/iceshrimp/packaging/src/branch/dev/archlinux)
-[![](https://hc.ztn.sh/badge/4fc73efa-2790-4146-86bf-8685c5d6b1f7/UIO1Q8q2-2/docker.svg)](https://iceshrimp.dev/iceshrimp/-/packages/container/iceshrimp/dev)
