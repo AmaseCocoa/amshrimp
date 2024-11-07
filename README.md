@@ -1,4 +1,4 @@
-AmShrimp is a fork of Iceshrimp (JS) focused on fixing problems and maintenance.
+**AmShrimp** is fork of IceshrimpJS and focused on UI/performance improvements and maintaining a lightweight fork.
 
 ---
 
