@@ -1,5 +1,10 @@
 **AmShrimp** is fork of IceshrimpJS and focused on UI/performance improvements and maintaining a lightweight fork.
 
+## Purpose
+- Create and maintain lightweight v12 forks compatible with Misskey and other major forks
+
+Original Text:
+
 ---
 
 > **Note**
